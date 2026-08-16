@@ -1157,8 +1157,7 @@ class Renderer(Protocol):
         document,
         destination: Path,
         context: RenderContext,
-    ) -> RenderResult:
-        ...
+    ) -> RenderResult: ...
 ```
 
 A renderer should declare capabilities such as:

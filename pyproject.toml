@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "chaff-generator"
+version = "0.1.0"
+description = "Deterministic synthetic-data corpus generator, filesystem capacity tool, and integrity-verification utility"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.12"
+authors = [{ name = "Chaff Generator contributors" }]
+dependencies = [
+    "PySide6>=6.7",
+    "typer>=0.12",
+    "jinja2>=3.1",
+    "pyyaml>=6.0",
+    "python-docx>=1.1",
+    "openpyxl>=3.1",
+    "python-pptx>=0.6.23",
+    "reportlab>=4.0",
+    "send2trash>=1.8",
+    "platformdirs>=4.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8",
+    "pytest-qt>=4.4",
+    "ruff>=0.5",
+    "mypy>=1.10",
+    "pyinstaller>=6.6",
+]
+
+[project.scripts]
+chaff = "chaff_generator.__main__:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/chaff_generator"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP", "B", "SIM", "RUF"]
+
+[tool.mypy]
+python_version = "3.12"
+mypy_path = "src"
+explicit_package_bases = true
+disallow_untyped_defs = true
+check_untyped_defs = true
+warn_unused_ignores = true
+no_implicit_optional = true
+
+[[tool.mypy.overrides]]
+module = ["docx.*", "pptx.*", "openpyxl.*", "reportlab.*", "send2trash.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+markers = [
+    "posix_only: test requires POSIX filesystem semantics",
+    "requires_trash: test requires an OS trash backend",
+]

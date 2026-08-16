@@ -4,49 +4,61 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-The Chafftafarian Chaff Generator creates realistic-looking fake files (chaff) for security purposes. It generates various file types including emails with attachments, documents, and images that are cross-referenced and encoded to appear as legitimate data.
+Chaff Generator creates realistic, entirely synthetic files ("chaff") for storage
+integrity testing, dummy-dataset generation, and filesystem capacity testing.
+It produces coherent collections of genuine everyday file formats from
+data-bank-driven templates, writes a SHA-256 manifest for every run, and can
+later verify the corpus against that manifest. The authoritative product and
+engineering specification is `major-plan.md`.
 
-## Common Commands
+## Commands
 
-### Setup
 ```bash
-pip install -r requirements.txt
-cp .env.example .env
-# Edit .env file with desired settings
-python main.py
-```
+python3 -m venv .venv
+source .venv/bin/activate        # Windows: .venv\Scripts\activate
+pip install -e ".[dev]"
 
-### Sentence Generator Example (will be removed when main project is complete)
-```bash
-python Sentence-Generator/run_generator.py <num-of-scripts-to-generate>
+pytest                           # full test suite
+pytest tests/unit                # one area
+ruff check . && ruff format --check .
+mypy
+
+chaff --help                     # CLI (generate / verify / clean / inspect / packs)
+chaff                            # launch the GUI
 ```
 
 ## Architecture
 
-### Main Application Structure
-- `main.py` - Primary entry point (needs implementation)
-- `settings.py` - Configuration management
-- `data/` - Contains templates, images, and phrase generation resources
-  - `images/` - Source images for chaff generation
-  - `templates/` - File templates for different chaff types
-  - `phrase_generator/` - Additional data for text generation
+Layered: the PySide6 GUI (`src/chaff_generator/gui/`) and the Typer CLI
+(`src/chaff_generator/cli/`) are thin adapters over the GUI-free core
+(`chaff_generator.core.ChaffEngine` and friends). The core never imports Qt;
+the CLI never imports Qt unless the GUI is explicitly launched. Public entry:
+`from chaff_generator import ChaffEngine`.
 
-### Configuration System
-- Settings managed via `.env` file
-- Default target directory: `/home/$USER/.chaff`
-- Configurable file types: txt, jpg, eml, pdf, docx, xlsx, csv
-- Multi-language support: en, es, fr, de, cn, jp, ru
-- File size range: 1MB-10MB, count range: 10-100 files
+Key packages under `src/chaff_generator/`:
 
-### Chaff Generation Strategy
-The system creates interconnected files:
-- Emails reference attachments and other files
-- Files encoded using various methods (base64, compression, encryption)
-- Cross-references between files create realistic data relationships
-- Passwords and encryption keys randomly distributed across files
+- `core/` — engine, planner, config models, events, size parsing, path safety
+  (all cross-platform filename/containment rules live in `core/paths.py`),
+  seeding (per-file seeds derived from the master seed), hashing, filesystem.
+- `content/` — ChaffBank pack loader, the synthetic "generation world", the
+  sandboxed Jinja template engine.
+- `templates/` + `renderers/` — validated YAML templates produce semantic
+  documents; a lazy renderer registry emits txt/md/html/csv/json/xml/eml/
+  docx/pdf/xlsx/pptx/vcf/ics/dat files.
+- `manifest/` — run marker, journal, manifest, and the verification engine.
+- `cleanup/` — safety-validated delete/trash of Chaff run roots only.
+- `data/default-pack/` — the built-in ChaffBank (words/phrases/sentences/
+  entities/templates/profiles). See its ATTRIBUTION.md for data provenance.
 
-### Sentence-Generator Reference Implementation
-Located in `Sentence-Generator/` directory - example of data generation patterns:
-- Rich vocabulary datasets (names, addresses, restaurants, etc.)
-- Configurable sentence types via `generation.conf`
-- Available types: NUMBER, TIME, DATE, PHONE_NUMBER, NAME, ADDRESS, QUERY, SENTENCE
+## Hard rules
+
+- Determinism: no process-global `random`; use isolated `random.Random` seeded
+  via `core.seeding`. Write text files in binary mode with explicit `\n` so
+  hashes match across Windows/Linux/macOS (CRLF only where an RFC requires it:
+  .ics/.vcf).
+- Safety: never test generation against real/large targets — use `tmp_path`.
+  Cleanup must only act on validated Chaff run roots (`.chaff-run.json`).
+- No Faker; all content comes from ChaffBank data packs.
+- Windows compatibility is a first-class requirement: reserved filenames,
+  illegal characters, MAX_PATH, case-insensitive collisions — route through
+  `core/paths.py` helpers rather than ad-hoc string handling.
