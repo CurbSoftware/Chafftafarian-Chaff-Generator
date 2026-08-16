@@ -1,0 +1,4087 @@
+[
+  {
+    "city": "Abbeville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Adamsville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Addison",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Adger",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alabaster",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Albertville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alexander City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alexandria",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Allgood",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alpine",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Andalusia",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Anniston",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Arab",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Arlington",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ashfor",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ashland",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ashville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Athens",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Atmore",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Attalla",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Auburn",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Auburn University",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Autaugaville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Axis",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bay Minette",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Berry",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bessemer",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Birmingham",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Blountsville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Boaz",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bremen",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Brewton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Brookwood",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Brownsboro",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bucks",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Buhl",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Butler",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Calera",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Calhoun County",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Camden",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Carrollton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Centre",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Centreville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chapman",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chelsea",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cherokee",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Childersburg",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Clanton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Clayton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Clio",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Coffeeville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Columbia",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Columbiana",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cottondale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cottonwood",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cowarts",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Creola",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Crossville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cullman",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Daleville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Daphne",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Dauphin Island",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Deatsville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Decatur",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Demopolis",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Dixons Mills",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Dothan",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Eastaboga",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Eclectic",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Eight Mile",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Elba",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Elberta",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Enterprise",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Eufaula",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Eutaw",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Evergreen",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Excel",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Fairfield",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Fairhope",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Fayette",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Florence",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Foley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Fruitdale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ft Deposit",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ft Payne",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ft Rucker",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Fulton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Fultondale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Gadsden",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Gardendale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Geneva",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Glenwood",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Goodwater",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Gordo",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Grand Bay",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Graysville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Greensboro",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Greenville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Grove Hill",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Guin",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Gulf Shores",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Guntersville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Haleyville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hamilton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hanceville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hartselle",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hatchechubbee",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hayden",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hayneville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hazel Green",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Headland",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Heflin",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Helena",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hodges",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hope Hull",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Huntsville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Huxford",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ider",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Jack",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Jackson",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Jacksonville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Jasper",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Jefferson",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Kellyton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Killen",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Laceys Spring",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lafayette",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lanett",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Leeds",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Leesburg",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lillian",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lincoln",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Linden",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lineville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Livingston",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Loachapoka",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Locust Fork",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Loxley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Luverne",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Madison",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Marion",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mathews",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Millport",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Millry",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mobile",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Monroeville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Montevallo",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Montgomery",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Montrose",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Morris",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Moulton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Munford",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Muscle Shoals",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "New Brockton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "New Market",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Newton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Newville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Normal",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Northport",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Notasulga",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Oakman",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Oneonta",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Opelika",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Opp",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Orange Beach",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Oxford",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ozark",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Paint Rock",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pelham",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pell City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pennington",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Perdue Hill",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Phenix City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Piedmont",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pike Road",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pine Hill",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pinson",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pleasant Grove",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Prattville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Quinton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ragland",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Rainbow City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Rainsville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ramer",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Red Bay",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Reform",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Roanoke",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Robertsdale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Russellville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Rutledge",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Saginaw",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Saraland",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Scottsboro",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Selma",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Semmes",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Shannon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sheffield",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Shelby",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Spanish Fort",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Springville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sulligent",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sumiton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Summerdale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sycamore",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sylacauga",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Talladega",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tallassee",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Theodore",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Thomasville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Toney",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Troy",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Trussville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tuscaloosa",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tuscumbia",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tuskegee",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tuskegee Institute",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Union Springs",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Valley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Vernon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Vinemont",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Wadley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Walnut Grove",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Warrior",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Webb",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Wedowee",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Wetumpka",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Winfield",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "York",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Anchorage",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Anderson",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Angoon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Atqasuk",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Barrow",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bethel",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Clear",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cordova",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Craig",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Delta Junction",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Dillingham",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Eagle River",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Eielson Afb",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Elmendorf Afb",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Fairbanks",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Galena",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Girdwood",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Glennallen",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Gustavus",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Haines",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Healy",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Homer",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hoonah",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Juneau",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Kenai",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ketchikan",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Klawock",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Kodiak",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Kotzebue",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mc Grath",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Metlakatla",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mountain Village",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Nikiski",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Nome",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "North Pole",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Palmer",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pelican",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Petersburg",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Port Lions",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Seward",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sitka",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Skagway",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Soldotna",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "St Paul Island",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tanacross",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Thorne Bay",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tok",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tununak",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Unalaska",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Valdez",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Wasilla",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Whittier",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Wrangell",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Yakutat",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ajo",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Amado",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Apache Junction",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Arizona City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ash Fork",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Avondale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Benson",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bisbee",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Buckeye",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bullhead City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Camp Verde",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Carefree",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Casa Grande",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Catalina",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cave Creek",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Central",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chandler",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chinle",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chino Valley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Clarkdale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Clifton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cochise",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Colorado City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Congress",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Coolidge",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cortaro",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Dateland",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Dewey",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Douglas",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Duncan",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ehrenberg",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "El Mirage",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Elgin",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Eloy",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Flagstaff",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Fountain Hills",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Fredonia",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ft Defiance",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ft Huachuca",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ft Mohave",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ft Thomas",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ganado",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Gila Bend",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Gilbert",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Glendale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Globe",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Goodyear",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Grand Canyon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Green Valley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Heber",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Higley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Holbrook",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hotevilla",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Joseph City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Kayenta",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Keams Canyon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Kearny",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Kingman",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Kykotsmovi Village",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lake Havasu City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lake Montezuma",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lakeside",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Laveen",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Litchfield Park",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Littlefield",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Luke Afb",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mammoth",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Many Farms",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Marana",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Maricopa",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mayer",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mesa",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Miami",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mohave County",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mohave Valley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Morenci",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Morristown",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Naco",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "New River",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Nogales",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Oracle",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Page",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Palo Verde",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Paradise Valley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Parker",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Parks",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Payson",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Peoria",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Phoenix",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pima",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pinetop",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Poston",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Prescott",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Prescott Valley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Quartzsite",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Queen Creek",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Red Rock",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Rio Rico",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Rio Verde",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sacaton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Safford",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sahuarita",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Salome",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "San Carlos",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "San Luis",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "San Manuel",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "San Simon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sanders",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Scottsdale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sedona",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Seligman",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sells",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Show Low",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sierra Vista",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Skull Valley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Snowflake",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Solomon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Somerton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Springerville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "St David",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "St Johns",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "St Michaels",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Stanfield",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sun City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sun City West",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Superior",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Surprise",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Teec Nos Pos",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tempe",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Thatcher",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tolleson",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tombstone",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tonopah",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Topawa",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tuba City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tucson",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Vail",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Waddell",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Wellton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Whiteriver",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Wickenburg",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Wikieup",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Willcox",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Williams",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Window Rock",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Winkelman",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Winslow",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Wittmann",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Youngtown",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Yuma",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Adona",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alexander",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alma",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Altheimer",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Amity",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Arkadelphia",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Armorel",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ash Flat",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ashdown",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Augusta",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bald Knob",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Barling",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Batesville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bauxite",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bay",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Beebe",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bella Vista",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Benton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bentonville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Berryville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bigelow",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Blytheville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Booneville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bradford",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Branch",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Brinkley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Brockwell",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Brookland",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bryant",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Burdette",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cabot",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Calico Rock",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Carlisle",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Carthage",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cave City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Center Ridge",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Charleston",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Charlotte",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cherokee Village",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Clarendon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Clarksville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Clinton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Compton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Conway",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Corning",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Crossett",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Danville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Dardanelle",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "De Queen",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "De Witt",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Dermott",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Des Arc",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Dumas",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Dyess",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "El Dorado",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Elm Springs",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "England",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Enola",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Eureka Springs",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Fairfield Bay",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Farmington",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Fayetteville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Flippin",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Floral",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Fordyce",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Forrest City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Fountain Hill",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Friendship",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ft Smith",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Gassville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Gentry",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Gillham",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Gould",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Grady",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Gravette",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Greenbrier",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Greenwood",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Guion",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hackett",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hamburg",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hardy",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Harrisburg",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Harrison",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hartford",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hattieville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hazen",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Heber Springs",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hector",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Higden",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hope",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hot Springs National Park",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hot Springs Village",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Hoxie",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Humphrey",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Imboden",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Jessieville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Joiner",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Jonesboro",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Keiser",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Kensett",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lake Village",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lavaca",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lead Hill",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lepanto",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Leslie",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Little Rock",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Little Rock Afb",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lockesburg",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "London",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lonoke",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lowell",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Luxora",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Lynn",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mabelvale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Magnolia",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Malvern",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mammoth Spring",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mansfield",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Marianna",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Marked Tree",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Marmaduke",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Marshall",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Maumelle",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Maynard",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mc Crory",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mc Gehee",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mc Rae",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Melbourne",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mena",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Monticello",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Morrilton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mount Holly",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mount Ida",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mount Pleasant",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mount Vernon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mountain Home",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mountain View",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Mountainburg",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Nashville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Newark",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Newport",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Norfork",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Norman",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "North Little Rock",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Osceola",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Palestine",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Paragould",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Paris",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pea Ridge",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pearcy",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Piggott",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pine Bluff",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Plainview",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Plumerville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pocahontas",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Poplar Grove",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Pottsville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Prairie Grove",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Quitman",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Rector",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Rison",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Rogers",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Romance",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Rosston",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Salem",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Saratoga",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Scotland",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Searcy",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sheridan",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sherwood",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Siloam Springs",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Smackover",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Springdale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Stamps",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Star City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "State University",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Stuttgart",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Subiaco",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Sulphur Rock",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Swifton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Texarkana",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Timbo",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Tontitown",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Trumann",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Valley Springs",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Van Buren",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Vilonia",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Waldo",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Waldron",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Walnut Ridge",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ward",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Warren",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Washington",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Weiner",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "West Fork",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "West Helena",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "West Memphis",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "White Hall",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Wiseman",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Wrightsville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Wynne",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Yellville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Acton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Adelanto",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Agoura Hills",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alameda",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alamo",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Albany",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Albion",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alhambra",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Aliso Viejo",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alleghany",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alpaugh",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alta",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Altadena",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Altaville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alturas",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Alviso",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "American Canyon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Anaheim",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Angels Camp",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Angwin",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Annapolis",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Antelope",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Antioch",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Apple Valley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Aptos",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Arbuckle",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Arcadia",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Arcata",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Arnold",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Aromas",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Arroyo Grande",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Artesia",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Arvin",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Atascadero",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Atherton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Atwater",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Auberry",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Avalon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Avenal",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Avila Beach",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Azusa",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Badger",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Baker",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bakersfield",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Baldwin Park",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bangor",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Banning",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Barstow",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Beale Afb",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Beaumont",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bell",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bell Gardens",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bellflower",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Belmont",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Belvedere Tiburon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ben Lomond",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Benicia",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Berkeley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bethel Island",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Beverly Hills",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Big Bear City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Big Bear Lake",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Big Bend",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Big Creek",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Big Oak Flat",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Big Pine",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Big sur",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Biggs",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bishop",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Blairsden-Graeagle",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bloomington",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Blue Jay",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Blue Lake",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Blythe",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bodega Bay",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bolinas",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bonita",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bonsall",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Boonville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Boron",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Borrego Springs",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Boulder Creek",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Boyes Hot Springs",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bradley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Brawley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Brea",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Brentwood",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bridgeport",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Bridgeville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Brisbane",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Brookdale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Brooks",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Buellton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Buena Park",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Burbank",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Burlingame",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Burney",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Burrel",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Butte City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Buttonwillow",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Byron",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cabazon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Calabasas",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Calexico",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "California City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "California Hot Springs",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Calimesa",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Calipatria",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Calistoga",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Calpella",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Camarillo",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cambria",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Camino",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Camp Pendleton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Campbell",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Campo",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Camptonville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Canoga Park",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Canyon",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Canyon Country",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Capistrano Beach",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Capitola",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cardiff by the Sea",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Carlsbad",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Carmel",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Carmel Valley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Carmichael",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Carpinteria",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Carson",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Caruthers",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Castaic",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Castro Valley",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Castroville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cathedral City",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cayucos",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cazadero",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cedar Glen",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Ceres",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cerritos",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Challenge",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chatsworth",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chester",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chicago Park",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chico",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chinese Camp",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chino",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chino Hills",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chowchilla",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chualar",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Chula Vista",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Citrus Heights",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "City of Industry",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Claremont",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Clearlake",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Clearlake Oaks",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Clements",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cloverdale",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Clovis",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Coachella",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Coalinga",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Cobb",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Coleville",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Colfax",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Coloma",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Colton",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Colusa",
+    "country": "United States",
+    "region": null
+  },
+  {
+    "city": "Berlin",
+    "country": "Germany",
+    "region": "Europe"
+  },
+  {
+    "city": "Madrid",
+    "country": "Spain",
+    "region": "Europe"
+  },
+  {
+    "city": "Rome",
+    "country": "Italy",
+    "region": "Europe"
+  },
+  {
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "region": "Europe"
+  },
+  {
+    "city": "Stockholm",
+    "country": "Sweden",
+    "region": "Europe"
+  },
+  {
+    "city": "Tokyo",
+    "country": "Japan",
+    "region": "Asia"
+  },
+  {
+    "city": "Seoul",
+    "country": "South Korea",
+    "region": "Asia"
+  },
+  {
+    "city": "Beijing",
+    "country": "China",
+    "region": "Asia"
+  },
+  {
+    "city": "Mumbai",
+    "country": "India",
+    "region": "Asia"
+  },
+  {
+    "city": "Singapore",
+    "country": "Singapore",
+    "region": "Asia"
+  },
+  {
+    "city": "Sydney",
+    "country": "Australia",
+    "region": "Oceania"
+  },
+  {
+    "city": "Toronto",
+    "country": "Canada",
+    "region": "North America"
+  },
+  {
+    "city": "Vancouver",
+    "country": "Canada",
+    "region": "North America"
+  },
+  {
+    "city": "Mexico City",
+    "country": "Mexico",
+    "region": "North America"
+  },
+  {
+    "city": "São Paulo",
+    "country": "Brazil",
+    "region": "South America"
+  },
+  {
+    "city": "Buenos Aires",
+    "country": "Argentina",
+    "region": "South America"
+  },
+  {
+    "city": "Cairo",
+    "country": "Egypt",
+    "region": "Africa"
+  }
+]
