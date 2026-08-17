@@ -10,11 +10,14 @@ def run() -> int:
 
     Returns the Qt exit code.
     """
-    from PySide6.QtWidgets import QApplication, QMainWindow
+    from PySide6.QtWidgets import QApplication
+
+    from chaff_generator.gui.main_window import MainWindow
 
     app = QApplication([])
-    window = QMainWindow()
-    window.setWindowTitle(f"Chaff Generator {__version__}")
-    window.resize(1100, 700)
+    app.setApplicationName("Chaff Generator")
+    app.setOrganizationName("chaff-generator")
+    app.setApplicationVersion(__version__)
+    window = MainWindow()
     window.show()
     return app.exec()

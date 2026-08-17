@@ -2,6 +2,11 @@
 
 from __future__ import annotations
 
+import os
+
+# GUI tests run headless: decide the Qt platform before anything imports Qt.
+os.environ.setdefault("QT_QPA_PLATFORM", "offscreen")
+
 from datetime import date
 from pathlib import Path
 
