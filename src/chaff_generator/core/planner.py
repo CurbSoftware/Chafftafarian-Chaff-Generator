@@ -326,6 +326,10 @@ class Planner:
             return f"payload-{index:05d}"
         if fmt == "dev":
             return _dev_stem(self._bank, extension, rng)
+        if fmt == "vcf":
+            return rng.choice(("contacts", "address_book", "personal_contacts", "work_contacts"))
+        if fmt == "ics":
+            return rng.choice(("calendar", "work_schedule", "meetings", "team_calendar"))
         # Self-generated prose fallback.
         adjective = gen.pick(rng, self._bank.words("adjectives")).title()
         noun = gen.pick(rng, self._bank.words("nouns")).title()

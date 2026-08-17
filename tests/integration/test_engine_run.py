@@ -216,8 +216,10 @@ class TestSafetyRails:
             resolved = (result.run_root / path).resolve()
             assert resolved.is_relative_to(result.run_root.resolve())
 
-    def test_pdf_unavailable_is_informational(self, tmp_path: Path):
-        """Phase-4 formats are skipped with a warning, not a failure."""
+    def test_pdf_unavailable_is_informational(self, tmp_path: Path, monkeypatch):
+        """Formats whose dependency is missing are skipped with a warning,
+        not a failure (reportlab is installed now, so simulate its absence
+        by pointing the registry at a module that cannot import)."""
         from conftest import make_config
 
         config = replace(
@@ -229,6 +231,9 @@ class TestSafetyRails:
             },
         )
         engine = ChaffEngine(config)
+        monkeypatch.setitem(
+            engine._registry._module_table, "pdf", "chaff_generator.renderers.missing_dep"
+        )
         summary = engine.preflight()
         assert "txt" in summary.formats
         result = engine.generate()
