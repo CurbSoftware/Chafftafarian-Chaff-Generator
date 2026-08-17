@@ -34,6 +34,8 @@ class RenderResult:
     size: int
     renderer_id: str
     template_id: str | None = None
+    #: Digest of the file as written; when None the engine re-hashes the file.
+    sha256: str | None = None
     warnings: list[str] = field(default_factory=list)
 
 

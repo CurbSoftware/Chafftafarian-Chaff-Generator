@@ -46,5 +46,5 @@ class RendererRegistry:
             factory = getattr(module, "get_renderer", None)
             if factory is None:
                 raise RendererError(f"Renderer module has no get_renderer(): {module_path}")
-            self._instances[renderer_id] = factory()
+            self._instances[renderer_id] = factory(renderer_id)
         return self._instances[renderer_id]

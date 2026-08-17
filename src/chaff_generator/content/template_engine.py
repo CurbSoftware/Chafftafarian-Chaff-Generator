@@ -42,6 +42,9 @@ MAX_RENDER_DEPTH: int = 5
 #: Maximum expanded length of a single bank entry before an error is raised.
 MAX_EXPANSION_CHARS: int = 100_000
 
+#: Compiled templates cached per engine instance (bank-sized working set).
+_TEMPLATE_CACHE_MAX: int = 4096
+
 _CURRENCY = Decimal("0.01")
 
 
@@ -112,6 +115,10 @@ class ChaffTemplateEngine:
         # Jinja that calls back into sentence()/pick(), so recursion is
         # threaded through the engine rather than function parameters.
         self._render_depth: int = 0
+        # Compiled-template cache: bank sentences repeat across a large file,
+        # so caching turns per-sentence compiles into dict lookups. Bounded;
+        # cleared outright when full (sources are bank-sized, so this is rare).
+        self._template_cache: dict[str, jinja2.Template] = {}
         self._env = SandboxedEnvironment(
             undefined=StrictUndefined,
             trim_blocks=True,
@@ -176,12 +183,19 @@ class ChaffTemplateEngine:
     # ------------------------------------------------------------- internals
 
     def _compile(self, source: str) -> jinja2.Template:
+        cached = self._template_cache.get(source)
+        if cached is not None:
+            return cached
         try:
-            return self._env.from_string(source)
+            template = self._env.from_string(source)
         except Exception as exc:
             raise TemplateError(
                 f"Template syntax error: {exc}", details={"source": source[:200]}
             ) from exc
+        if len(self._template_cache) >= _TEMPLATE_CACHE_MAX:
+            self._template_cache.clear()
+        self._template_cache[source] = template
+        return template
 
     def _context_variables(self, extra: dict[str, Any]) -> dict[str, Any]:
         """Shared variables available to every template in this file's context."""

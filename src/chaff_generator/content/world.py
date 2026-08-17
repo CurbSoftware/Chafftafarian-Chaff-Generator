@@ -43,6 +43,16 @@ class Timeline:
     def between(self) -> date:
         return gen.date_between(self._rng, self._range.start, self._range.end)
 
+    def draw_between(self, rng: random.Random) -> date:
+        """Draw a date in range using the *caller's* RNG.
+
+        Renderers must use this, not :meth:`between`: the timeline's own RNG
+        is shared world state, so consuming it during rendering would make a
+        file's bytes depend on every file rendered before it (spec section 11
+        requires a file to be reproducible from its seed alone).
+        """
+        return gen.date_between(rng, self._range.start, self._range.end)
+
     def after(self, anchor: date, min_days: int = 1, max_days: int = 45) -> date:
         """A date after ``anchor``; clamped into the configured range."""
         candidate = gen.date_after(self._rng, anchor, min_days, max_days)

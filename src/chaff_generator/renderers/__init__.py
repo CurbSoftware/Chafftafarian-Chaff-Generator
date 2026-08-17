@@ -8,7 +8,7 @@ from chaff_generator.renderers.registry import RendererRegistry
 #: imported lazily on first use so a txt-only run never imports python-pptx.
 RENDERER_MODULES: dict[str, str] = {
     "txt": "chaff_generator.renderers.text",
-    "log": "chaff_generator.renderers.text",
+    "log": "chaff_generator.renderers.log",
     "md": "chaff_generator.renderers.markdown",
     "html": "chaff_generator.renderers.html",
     "csv": "chaff_generator.renderers.csv",
