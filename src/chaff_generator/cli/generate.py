@@ -179,7 +179,31 @@ def generate(
         typer.echo(f"Manifest  : {result.manifest_path}")
     for warning in result.warnings:
         typer.secho(f"Warning   : {warning}", fg=typer.colors.YELLOW)
-    typer.echo("Verify with: chaff verify " + str(result.run_root))
+
+    if job_config.completion is not CompletionAction.KEEP:
+        # §41: the destructive completion action only fires on a fully
+        # successful run and only because the user explicitly selected it.
+        from chaff_generator.cleanup.manager import CleanupManager
+
+        try:
+            cleaned = CleanupManager().execute_completion_action(result, job_config.completion)
+        except ChaffError as exc:
+            typer.secho(
+                f"Completion action failed (the run is still on disk): {exc}",
+                fg=typer.colors.RED,
+                err=True,
+            )
+            raise typer.Exit(code=1) from exc
+        if cleaned is not None:
+            for warning in cleaned.warnings:
+                typer.secho(f"Note      : {warning}", fg=typer.colors.YELLOW)
+            done = "moved to the trash" if cleaned.trashed else "deleted"
+            typer.secho(
+                f"Run {done} per --completion {job_config.completion.value}.",
+                fg=typer.colors.GREEN,
+            )
+    else:
+        typer.echo("Verify with: chaff verify " + str(result.run_root))
 
 
 def _build_config(
