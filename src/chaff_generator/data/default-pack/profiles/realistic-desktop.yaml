@@ -1,0 +1,28 @@
+id: realistic-desktop
+name: Realistic Desktop
+description: A plausible everyday desktop - documents, sheets, emails, and notes.
+directory_layout: realistic
+format_weights:
+  txt: 14
+  md: 8
+  pdf: 12
+  docx: 14
+  xlsx: 10
+  pptx: 5
+  eml: 12
+  csv: 8
+  json: 5
+  html: 4
+  ics: 2
+  vcf: 2
+  log: 2
+  xml: 2
+  dev: 2
+content_domains:
+  business: 30
+  administrative: 22
+  technical: 16
+  finance: 12
+  personal: 10
+  support: 6
+  sales: 4

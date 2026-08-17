@@ -1,0 +1,30 @@
+id: presentation.training_intro
+kind: presentation
+description: Training session introduction deck.
+domains: [hr, administrative]
+body:
+  title: "Training - {{ word('topics') | title }}"
+  subtitle: "Facilitated by {{ primary_user.full_name }}"
+  slides:
+    - kind: title
+      heading: "Welcome"
+      note: "{{ word('topics') | title }} training - {{ date_recent(12) }}"
+    - kind: section
+      heading: "Agenda"
+    - kind: bullets
+      heading: "Today"
+      bullets:
+        - "Overview and ground rules ({{ integer(10, 30) }} minutes)."
+        - "Hands-on {{ word('nouns') }} exercise ({{ integer(30, 75) }} minutes)."
+        - "Wrap-up and evaluation."
+    - kind: bullets
+      heading: "Learning Goals"
+      bullets:
+        - "{{ sentence('business') }}"
+        - "Apply the {{ word('topics') }} checklist unaided."
+    - kind: bullets
+      heading: "Logistics"
+      bullets:
+        - "Room: {{ integer(101, 799) }}. Breaks every {{ integer(45, 90) }} minutes."
+        - "Materials: shared folder 'training-{{ date_recent(1) }}'."
+        - "Questions to {{ primary_user.email }}."

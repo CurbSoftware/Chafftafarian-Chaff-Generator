@@ -1,0 +1,20 @@
+id: email.meeting_followup
+kind: email
+description: Post-meeting thank-you with recap and action items.
+domains: [business, administrative]
+body:
+  subject: "Follow-up: {{ meeting.topic }} ({{ meeting.id }})"
+  from_name: "{{ primary_user.full_name }}"
+  to_name: "{{ contact.full_name }}"
+  category: followup
+  body_paragraphs:
+    - "{{ pick('greetings') }}"
+    - "Thank you for joining {{ meeting.topic }} on {{ meeting.date | datefmt }}."
+    - "Recap: {{ sentence('business') }}"
+    - "Action items:"
+    - "1. {{ pick('meeting_actions') }} - {{ primary_user.full_name }}"
+    - "2. {{ pick('meeting_actions') }} - {{ contact.full_name }}"
+    - "3. {{ pick('meeting_actions') }} - {{ person.full_name }}"
+    - "I will track these in the shared register and report next week."
+    - "{{ pick('closings') }}"
+  signature: "{{ primary_user.full_name }}\n{{ primary_user.job_title }}\n{{ primary_user.phone }}"

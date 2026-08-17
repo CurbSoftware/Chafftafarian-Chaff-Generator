@@ -1,0 +1,8 @@
+id: record.access_log
+kind: record
+description: Facility/system access audit records.
+domains: [security, technical]
+body:
+  record_type: access_log
+  columns: ["timestamp", "badge_id", "person", "door", "result"]
+  row_count: 120

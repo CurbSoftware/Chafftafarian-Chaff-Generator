@@ -1,0 +1,16 @@
+id: email.personal_message
+kind: email
+description: Casual personal email between colleagues or friends.
+domains: [personal]
+body:
+  subject: "{{ word('nouns') | title }} this weekend?"
+  from_name: "{{ primary_user.full_name }}"
+  to_name: "{{ contact.full_name }}"
+  category: personal
+  body_paragraphs:
+    - "Hi {{ contact.first_name }},"
+    - "{{ sentence('personal') }}"
+    - "{{ paragraph('personal', 2) }}"
+    - "Let me know if {{ date_recent(9) }} works for you."
+    - "{{ pick('closings') }}"
+  signature: "{{ primary_user.first_name }}"

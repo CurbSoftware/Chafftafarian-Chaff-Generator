@@ -1,0 +1,31 @@
+id: prose.expense_report
+kind: prose
+description: Submitted expense claim with itemized lines and totals.
+domains: [finance, administrative]
+body:
+  title: "Expense Report - {{ primary_user.full_name }}"
+  author: "{{ primary_user.full_name }}"
+  sections:
+    - heading: "Claim Details"
+      paragraphs:
+        - "Employee: {{ primary_user.full_name }} ({{ primary_user.department }})"
+        - "Period: {{ date_recent(40) }} to {{ date_recent(3) }}"
+        - "Cost center: {{ project.code }}"
+        - "Approver: {{ person.full_name }}"
+    - heading: "Itemized Expenses"
+      table:
+        columns: ["Date", "Category", "Description", "Amount"]
+        rows:
+          - ["{{ date_recent(35) }}", "Travel", "{{ word('nouns') | title }} visit - {{ client.city }}", "{{ money(45, 420) }}"]
+          - ["{{ date_recent(28) }}", "Meals", "Client dinner with {{ client.name }}", "{{ money(18, 95) }}"]
+          - ["{{ date_recent(20) }}", "Supplies", "{{ word('products') }} for the {{ project.code }} effort", "{{ money(12, 260) }}"]
+          - ["{{ date_recent(12) }}", "Software", "{{ word('technologies') }} license top-up", "{{ money(30, 300) }}"]
+          - ["{{ date_recent(6) }}", "Parking", "Office garage", "{{ money(8, 40) }}"]
+    - heading: "Totals"
+      paragraphs:
+        - "Total claimed: {{ money(180, 950) }}"
+        - "Payment method on file: corporate card ending {{ integer(1000, 9999) }}"
+    - heading: "Declaration"
+      paragraphs:
+        - "I confirm these expenses were incurred for business purposes and receipts are attached."
+        - "Signature: {{ primary_user.full_name }} - Date: {{ date_recent(1) }}"

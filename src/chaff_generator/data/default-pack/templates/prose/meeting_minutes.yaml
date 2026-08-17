@@ -1,0 +1,31 @@
+id: prose.meeting_minutes
+kind: prose
+description: Formal minutes for a meeting from the world calendar.
+domains: [business, administrative]
+body:
+  title: "Minutes - {{ meeting.topic }}"
+  author: "Recorded by {{ primary_user.full_name }}"
+  sections:
+    - heading: "Meeting Details"
+      paragraphs:
+        - "Date: {{ meeting.date | datefmt }}"
+        - "Reference: {{ meeting.id }}"
+        - "Topic: {{ meeting.topic }}"
+        - "Attendees: {{ integer(4, 9) }} participants from {{ person.department }} and related teams"
+    - heading: "Discussion"
+      paragraphs:
+        - "{{ paragraph('business', 3) }}"
+        - "{{ sentence('business') }}"
+    - heading: "Decisions"
+      bullets:
+        - "{{ sentence('business') }}"
+        - "{{ pick('project_status') }}"
+    - heading: "Action Items"
+      numbered:
+        - "{{ pick('meeting_actions') }} - {{ person.full_name }} - due {{ date_recent(21) }}"
+        - "{{ pick('meeting_actions') }} - {{ primary_user.full_name }} - due {{ date_recent(14) }}"
+        - "{{ pick('meeting_actions') }} - {{ contact.full_name }} - due {{ date_recent(7) }}"
+    - heading: "Attachments"
+      bullets:
+        - "Agenda (ref {{ meeting.id }}-A)"
+        - "Attendance sheet (ref {{ meeting.id }}-B)"

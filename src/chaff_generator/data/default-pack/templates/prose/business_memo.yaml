@@ -1,0 +1,35 @@
+id: prose.business_memo
+kind: prose
+description: Internal interoffice memo with background, points, and actions.
+domains: [business, administrative]
+body:
+  title: "MEMORANDUM - {{ word('topics') | title }}"
+  author: "{{ primary_user.full_name }}, {{ primary_user.job_title }}"
+  sections:
+    - heading: "TO / FROM / DATE"
+      paragraphs:
+        - "TO: All {{ organization.name }} staff in {{ person.department }}"
+        - "FROM: {{ primary_user.full_name }}"
+        - "DATE: {{ date_recent(45) }}"
+        - "RE: {{ pick('project_status') }}"
+    - heading: "Background"
+      paragraphs:
+        - "This memo summarizes recent developments that affect day-to-day work in {{ person.department }}."
+        - "{{ paragraph('business', 3) }}"
+    - heading: "Key Points"
+      bullets:
+        - "{{ sentence('business') }}"
+        - "{{ sentence('business') }}"
+        - "{{ sentence('business') }}"
+    - heading: "Timeline"
+      table:
+        columns: ["Item", "Owner", "Due"]
+        rows:
+          - ["{{ word('nouns') | title }} review", "{{ person.full_name }}", "{{ date_recent(20) }}"]
+          - ["{{ word('nouns') | title }} sign-off", "{{ primary_user.full_name }}", "{{ date_recent(10) }}"]
+          - ["{{ word('nouns') | title }} publication", "{{ contact.full_name }}", "{{ date_recent(5) }}"]
+    - heading: "Actions Requested"
+      numbered:
+        - "Read the attached summary before {{ date_recent(14) }}."
+        - "Send comments to {{ primary_user.email }}."
+        - "Raise questions in the next team meeting."

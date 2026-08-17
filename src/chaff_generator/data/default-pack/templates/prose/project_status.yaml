@@ -1,0 +1,32 @@
+id: prose.project_status
+kind: prose
+description: Standing status report for a project in the generation world.
+domains: [business, technical]
+body:
+  title: "Status Report - {{ project.name }} ({{ project.code }})"
+  author: "{{ project_manager.full_name }}, Project Manager"
+  sections:
+    - heading: "Summary"
+      paragraphs:
+        - "Project: {{ project.name }}"
+        - "Reference: {{ project.code }}"
+        - "Status: {{ project.status }}"
+        - "Budget: {{ project.budget | currency }}"
+        - "Period covered: {{ project.start_date | datefmt }} to {{ date_recent(7) }}"
+    - heading: "Progress This Period"
+      paragraphs:
+        - "{{ paragraph('project_updates', 3) }}"
+      bullets:
+        - "{{ sentence('project_updates') }}"
+        - "{{ sentence('project_updates') }}"
+        - "{{ sentence('project_updates') }}"
+    - heading: "Risks and Issues"
+      paragraphs:
+        - "{{ sentence('business') }}"
+      numbered:
+        - "{{ word('nouns') | title }} dependency - owner {{ person.full_name }} - due {{ date_recent(12) }}"
+        - "{{ word('nouns') | title }} approval - owner {{ primary_user.full_name }} - due {{ date_recent(30) }}"
+    - heading: "Next Period"
+      paragraphs:
+        - "{{ pick('project_status') }}"
+        - "{{ sentence('project_updates') }}"

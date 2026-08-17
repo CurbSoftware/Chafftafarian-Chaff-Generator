@@ -1,0 +1,35 @@
+id: prose.technical_report
+kind: prose
+description: Engineering report with environment, findings, and recommendations.
+domains: [technical]
+body:
+  title: "Technical Report - {{ word('topics') | title }} Assessment"
+  author: "{{ primary_user.full_name }}, {{ primary_user.job_title }}"
+  sections:
+    - heading: "Overview"
+      paragraphs:
+        - "This report documents the evaluation of {{ word('technologies') }} for {{ organization.name }}."
+        - "{{ sentence('technical') }}"
+    - heading: "Environment"
+      table:
+        columns: ["Component", "Version", "Notes"]
+        rows:
+          - ["Primary platform", "{{ word('technologies') }}", "{{ word('adjectives') }} deployment"]
+          - ["Supporting service", "{{ word('technologies') }}", "{{ integer(2, 12) }} nodes"]
+          - ["Monitoring", "{{ word('technologies') }}", "{{ word('adjectives') }} coverage"]
+    - heading: "Findings"
+      paragraphs:
+        - "{{ paragraph('technical', 3) }}"
+      bullets:
+        - "{{ sentence('technical') }}"
+        - "{{ sentence('technical') }}"
+    - heading: "Recommendations"
+      numbered:
+        - "Adopt {{ word('technologies') }} for the {{ word('nouns') }} workload."
+        - "Revisit {{ word('topics') }} at the next quarterly review."
+        - "Assign follow-up to {{ person.full_name }}."
+    - page_break: true
+    - heading: "Appendix A - Measurements"
+      paragraphs:
+        - "Collected between {{ date_recent(60) }} and {{ date_recent(5) }}."
+        - "{{ integer(120, 980) }} samples; {{ decimal(95.0, 99.9, 1) }} percent completeness."

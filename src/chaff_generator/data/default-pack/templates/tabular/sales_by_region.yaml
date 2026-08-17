@@ -1,0 +1,13 @@
+id: tabular.sales_by_region
+kind: tabular
+description: Regional sales summary by quarter.
+domains: [sales, finance]
+body:
+  sheet_title: "Sales by Region - Q{{ integer(1, 4) }}"
+  columns: ["Region", "Orders", "Revenue", "Returns", "Net"]
+  rows:
+    - ["North", "{{ integer(40, 900) }}", "{{ money(12000, 380000) }}", "{{ money(200, 9000) }}", "{{ money(11000, 375000) }}"]
+    - ["South", "{{ integer(35, 800) }}", "{{ money(10000, 340000) }}", "{{ money(150, 8000) }}", "{{ money(9000, 335000) }}"]
+    - ["East", "{{ integer(30, 700) }}", "{{ money(9000, 300000) }}", "{{ money(120, 7000) }}", "{{ money(8000, 295000) }}"]
+    - ["West", "{{ integer(25, 650) }}", "{{ money(8000, 280000) }}", "{{ money(100, 6000) }}", "{{ money(7000, 276000) }}"]
+  notes: "{{ sentence('business') }} Prepared by {{ primary_user.full_name }}."

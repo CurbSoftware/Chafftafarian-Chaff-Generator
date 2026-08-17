@@ -1,0 +1,13 @@
+id: tabular.incident_log
+kind: tabular
+description: Service desk incident log extract.
+domains: [support, technical]
+body:
+  sheet_title: "Incident Log - {{ date_recent(1) }}"
+  columns: ["Ticket", "Opened", "Category", "Reporter", "Assignee", "Priority", "Status"]
+  rows:
+    - ["INC-{{ integer(1000, 9999) }}", "{{ date_recent(9) }}", "{{ word('nouns') }}", "{{ person.full_name }}", "{{ primary_user.full_name }}", "P{{ integer(1, 4) }}", "closed"]
+    - ["INC-{{ integer(1000, 9999) }}", "{{ date_recent(7) }}", "access", "{{ contact.full_name }}", "{{ person.full_name }}", "P{{ integer(2, 4) }}", "in progress"]
+    - ["INC-{{ integer(1000, 9999) }}", "{{ date_recent(3) }}", "{{ word('nouns') }}", "{{ person.full_name }}", "{{ primary_user.full_name }}", "P{{ integer(1, 3) }}", "open"]
+    - ["REQ-{{ integer(1000, 9999) }}", "{{ date_recent(2) }}", "provisioning", "{{ contact.full_name }}", "{{ person.full_name }}", "P4", "queued"]
+  notes: "{{ sentence('support') }}"

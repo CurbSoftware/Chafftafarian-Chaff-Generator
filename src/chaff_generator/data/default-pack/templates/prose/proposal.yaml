@@ -1,0 +1,37 @@
+id: prose.proposal
+kind: prose
+description: Service or project proposal with options and pricing.
+domains: [business, sales]
+body:
+  title: "Proposal - {{ word('topics') | title }} Services"
+  author: "{{ primary_user.full_name }}, {{ primary_user.job_title }}"
+  sections:
+    - heading: "Executive Summary"
+      paragraphs:
+        - "{{ organization.name }} proposes to deliver a {{ word('nouns') }} program for {{ client.name }}."
+        - "{{ sentence('business') }}"
+    - heading: "Client"
+      paragraphs:
+        - "{{ client.name }} - {{ client.city }}"
+        - "Primary contact: {{ contact.full_name }} ({{ contact.email }})"
+    - heading: "Scope of Work"
+      numbered:
+        - "Discovery and {{ word('nouns') }} assessment."
+        - "Design of the {{ word('topics') }} approach."
+        - "Implementation across {{ integer(2, 6) }} phases."
+        - "Handover and {{ integer(2, 8) }} weeks of support."
+    - heading: "Investment"
+      table:
+        columns: ["Item", "Estimate"]
+        rows:
+          - ["Discovery", "{{ money(2500, 9000) }}"]
+          - ["Implementation", "{{ money(12000, 45000) }}"]
+          - ["Support retainer", "{{ money(1500, 6000) }}"]
+    - heading: "Why Us"
+      bullets:
+        - "{{ sentence('business') }}"
+        - "{{ pick('project_status') }}"
+    - heading: "Assumptions"
+      paragraphs:
+        - "Pricing valid until {{ date_recent(45) }}. Travel billed at cost."
+        - "Signed proposals may be sent to {{ primary_user.email }}."

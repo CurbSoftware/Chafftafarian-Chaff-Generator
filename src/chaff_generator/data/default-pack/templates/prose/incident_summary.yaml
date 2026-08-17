@@ -1,0 +1,34 @@
+id: prose.incident_summary
+kind: prose
+description: Post-incident summary with timeline and corrective actions.
+domains: [technical, support]
+body:
+  title: "Incident Summary - INC-{{ integer(1000, 9999) }}"
+  author: "{{ primary_user.full_name }}, Incident Coordinator"
+  sections:
+    - heading: "Incident Details"
+      paragraphs:
+        - "Identifier: INC-{{ integer(1000, 9999) }}"
+        - "Reported: {{ date_recent(9) }}"
+        - "Resolved: {{ date_recent(2) }}"
+        - "Severity: SEV-{{ integer(1, 4) }}"
+        - "Affected service: {{ word('nouns') }} platform"
+    - heading: "Impact"
+      paragraphs:
+        - "{{ sentence('technical') }}"
+        - "{{ sentence('support') }}"
+    - heading: "Timeline"
+      numbered:
+        - "{{ date_recent(9) }} - Alert raised by {{ word('technologies') }} monitoring."
+        - "{{ date_recent(8) }} - Initial triage by {{ person.full_name }}."
+        - "{{ date_recent(4) }} - Fix deployed to production."
+        - "{{ date_recent(2) }} - Incident closed after verification."
+    - heading: "Root Cause"
+      paragraphs:
+        - "{{ paragraph('technical', 2) }}"
+    - heading: "Corrective Actions"
+      bullets:
+        - "{{ pick('meeting_actions') }}"
+        - "{{ pick('meeting_actions') }}"
+      paragraphs:
+        - "Owner: {{ primary_user.full_name }} ({{ primary_user.email }})"

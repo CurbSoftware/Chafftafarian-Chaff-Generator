@@ -1,0 +1,8 @@
+id: record.system_log
+kind: record
+description: Application/system log record extract.
+domains: [technical]
+body:
+  record_type: system_log
+  columns: ["timestamp", "level", "service", "message", "trace_id"]
+  row_count: 250

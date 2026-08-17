@@ -1,0 +1,63 @@
+# Product-flavored nouns used to compose catalog item names.
+Adapter
+Appliance
+Assembly
+Bracket
+Cable
+Camera
+Carrying case
+Charger
+Chassis
+Circuit board
+Controller
+Docking station
+Drive bay
+Enclosure
+Fan module
+Filter cartridge
+Firmware pack
+Gateway router
+Graphics card
+Hard drive
+Headset
+Heatsink
+Keyboard
+Label roll
+Laptop dock
+Lens kit
+Light panel
+Memory module
+Monitor arm
+Motherboard
+Mouse
+Network switch
+Optical drive
+Panel
+Paper tray
+Patch panel
+Power supply
+Processor
+Rack mount
+RAID controller
+Reader
+Ribbon cartridge
+Router
+Scanner
+Sensor
+Server blade
+Shield
+Solid-state drive
+Speaker
+Stabilizer
+Stand
+Tablet case
+Terminal
+Test probe
+Toolkit
+Trackpad
+Transceiver
+UPS battery
+Warranty extension
+Webcam
+Wireless adapter
+Workstation

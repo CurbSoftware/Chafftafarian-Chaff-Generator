@@ -1,0 +1,17 @@
+id: email.project_update
+kind: email
+description: Weekly project update email to stakeholders.
+domains: [business, technical]
+body:
+  subject: "[{{ project.code }}] Weekly update - {{ project.name }}"
+  from_name: "{{ primary_user.full_name }}"
+  to_name: "{{ person.full_name }}"
+  category: project
+  body_paragraphs:
+    - "{{ pick('greetings') }}"
+    - "{{ pick('project_status') }}"
+    - "{{ sentence('project_updates') }}"
+    - "{{ paragraph('project_updates', 2) }}"
+    - "Next milestone: {{ date_recent(21) }}. Owner: {{ project_manager.full_name }}."
+    - "{{ pick('closings') }}"
+  signature: "{{ primary_user.full_name }}\n{{ primary_user.job_title }}, {{ organization.name }}\n{{ primary_user.email }}"

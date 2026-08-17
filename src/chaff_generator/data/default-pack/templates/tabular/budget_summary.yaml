@@ -1,0 +1,13 @@
+id: tabular.budget_summary
+kind: tabular
+description: Departmental budget summary by cost center.
+domains: [finance]
+body:
+  sheet_title: "Budget Summary - {{ person.department }}"
+  columns: ["Cost Center", "Category", "Planned", "Actual", "Variance"]
+  rows:
+    - ["{{ project.code }}", "labor", "{{ money(80000, 240000) }}", "{{ money(78000, 250000) }}", "{{ money(-9000, 12000) }}"]
+    - ["{{ project.code }}", "software", "{{ money(12000, 90000) }}", "{{ money(11000, 95000) }}", "{{ money(-4000, 6000) }}"]
+    - ["{{ project.code }}", "travel", "{{ money(4000, 30000) }}", "{{ money(2500, 33000) }}", "{{ money(-3000, 4000) }}"]
+    - ["{{ project.code }}", "training", "{{ money(3000, 24000) }}", "{{ money(1800, 26000) }}", "{{ money(-2000, 3000) }}"]
+  notes: "Figures in USD. {{ sentence('finance') }}"

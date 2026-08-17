@@ -1,0 +1,25 @@
+id: prose.personal_letter
+kind: prose
+description: Informal personal letter between two people.
+domains: [personal]
+body:
+  title: "Letter"
+  author: "{{ primary_user.full_name }}"
+  sections:
+    - heading: "Header"
+      paragraphs:
+        - "{{ date_recent(11) }}"
+    - heading: "Greeting"
+      paragraphs:
+        - "Dear {{ contact.first_name }},"
+    - heading: "Body"
+      paragraphs:
+        - "{{ sentence('personal') }}"
+        - "{{ paragraph('personal', 3) }}"
+        - "{{ sentence('personal') }}"
+        - "{{ pick('closings') }}"
+        - "Write back when you can."
+    - heading: "Signature"
+      paragraphs:
+        - "With love,"
+        - "{{ primary_user.first_name }}"

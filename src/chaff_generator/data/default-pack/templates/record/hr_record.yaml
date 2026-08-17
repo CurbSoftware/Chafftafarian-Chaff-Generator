@@ -1,0 +1,8 @@
+id: record.hr_record
+kind: record
+description: HR personnel record entries.
+domains: [hr, administrative]
+body:
+  record_type: hr_record
+  columns: ["employee_id", "full_name", "department", "job_title", "hire_date", "email"]
+  row_count: 40

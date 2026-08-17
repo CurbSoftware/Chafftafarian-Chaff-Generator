@@ -1,0 +1,26 @@
+id: prose.todo_list
+kind: prose
+description: Personal to-do list with priorities and due dates.
+domains: [personal, administrative]
+body:
+  title: "To Do - {{ date_recent(3) }}"
+  author: "{{ primary_user.full_name }}"
+  sections:
+    - heading: "High Priority"
+      bullets:
+        - "{{ pick('meeting_actions') }}"
+        - "Reply to {{ contact.full_name }} about {{ word('topics') }}"
+        - "Book travel for the {{ project.name }} review"
+    - heading: "Medium Priority"
+      bullets:
+        - "Renew the {{ word('products') }} before {{ date_recent(15) }}"
+        - "File the {{ word('nouns') }} paperwork from last month"
+        - "Confirm the {{ integer(2, 8) }} attendees for Thursday"
+    - heading: "Low Priority"
+      bullets:
+        - "{{ sentence('personal') }}"
+        - "Sort the {{ word('nouns') }} folder"
+        - "Read up on {{ word('technologies') }}"
+    - heading: "Notes"
+      paragraphs:
+        - "Weekly review scheduled for {{ date_recent(7) }}."

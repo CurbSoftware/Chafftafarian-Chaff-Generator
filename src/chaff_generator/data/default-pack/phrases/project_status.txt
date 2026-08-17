@@ -1,0 +1,40 @@
+# Status snippets; may reference world entities (rendered via the sandbox).
+{{ project.name }} remains {{ project.status }} as of this week.
+{{ project.name }} is tracking within the approved budget.
+All committed deliverables for {{ project.name }} are on schedule.
+Configuration work for {{ project.name }} has finished ahead of plan.
+Documentation for {{ project.name }} is being finalized.
+Estimates for {{ project.name }} were revised after the latest review.
+Integration testing for {{ project.name }} starts next sprint.
+Key milestones for {{ project.name }} are unchanged.
+Pending approvals are the main risk for {{ project.name }} at present.
+Progress on {{ project.name }} is steady overall.
+Resource commitments for {{ project.name }} were reconfirmed.
+Schedule pressure on {{ project.name }} has eased slightly.
+Stakeholder feedback on {{ project.name }} has been positive so far.
+Team assignments for {{ project.name }} were updated this week.
+The change queue for {{ project.name }} is under review.
+The current phase of {{ project.name }} closes at month end.
+The pilot rollout for {{ project.name }} completed without incidents.
+Testing coverage for {{ project.name }} continues to improve.
+Training materials for {{ project.name }} are in review.
+Vendor dependencies for {{ project.name }} are on track.
+Work on {{ project.name }} continues per the agreed timeline.
+Acceptance criteria are being validated with the business owners.
+A decision meeting has been scheduled for early next week.
+Budget variance remains within the agreed tolerance.
+Dependencies between teams have been mapped and communicated.
+Escalations from last month have all been resolved.
+No new risks were identified during the weekly review.
+Open action items are being tracked in the shared register.
+Outstanding invoices have been matched to purchase orders.
+Planning assumptions will be revisited at the quarterly review.
+Priorities were realigned following the steering committee session.
+Quality gates have been passed for the current release candidate.
+Remaining effort estimates were refreshed by the delivery leads.
+Sign-off is expected once the audit trail is complete.
+The rollout plan is being socialized with affected departments.
+The steering group endorsed the revised approach.
+Two legacy systems will be retired once migration completes.
+Uplift work was deprioritized in favor of stability fixes.
+Usage statistics will be reviewed at the next operations meeting.

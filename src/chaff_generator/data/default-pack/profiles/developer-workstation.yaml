@@ -1,0 +1,22 @@
+id: developer-workstation
+name: Developer Workstation
+description: Engineering-flavored mix with code, logs, data files, and specs.
+directory_layout: realistic
+format_weights:
+  txt: 12
+  md: 16
+  dev: 22
+  log: 12
+  json: 12
+  xml: 6
+  csv: 6
+  html: 6
+  pdf: 4
+  eml: 4
+content_domains:
+  technical: 46
+  business: 16
+  administrative: 14
+  support: 10
+  security: 8
+  research: 6

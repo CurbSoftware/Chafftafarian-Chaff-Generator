@@ -1,0 +1,17 @@
+id: email.support_reply
+kind: email
+description: Service desk reply resolving a ticket.
+domains: [support]
+body:
+  subject: "Re: [HELP-{{ integer(1000, 9999) }}] resolved - {{ word('nouns') | title }}"
+  from_name: "IT Service Desk"
+  to_name: "{{ person.full_name }}"
+  category: support
+  body_paragraphs:
+    - "Hello {{ person.first_name }},"
+    - "{{ sentence('support') }}"
+    - "Resolution: {{ sentence('technical') }}"
+    - "We have also updated the knowledge article for future reference."
+    - "If the issue returns within {{ integer(7, 30) }} days, reply to this message and the ticket will be reopened."
+    - "{{ pick('closings') }}"
+  signature: "Service Desk\n{{ organization.name }}\nservicedesk@{{ organization.domain }}"

@@ -1,0 +1,18 @@
+id: email.newsletter
+kind: email
+description: Internal newsletter with department news items.
+domains: [business, administrative]
+body:
+  subject: "{{ organization.name }} Bulletin - {{ date_recent(7) }}"
+  from_name: "{{ organization.name }} Communications"
+  to_name: "All Staff"
+  category: newsletter
+  body_paragraphs:
+    - "Welcome to this week's bulletin."
+    - "IN BRIEF: {{ sentence('business') }}"
+    - "PROJECT SPOTLIGHT: {{ pick('project_status') }}"
+    - "DEPARTMENT NOTE: {{ sentence('business') }}"
+    - "TIP OF THE WEEK: use the {{ word('nouns') }} portal for {{ word('topics') }} requests - it routes them faster than email."
+    - "UPCOMING: town hall on {{ date_recent(25) }}; bring questions for leadership."
+    - "{{ pick('closings') }}"
+  signature: "Communications Team\n{{ organization.name }}"

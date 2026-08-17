@@ -1,0 +1,27 @@
+id: prose.policy_note
+kind: prose
+description: Short policy or guideline note for staff.
+domains: [administrative, hr]
+body:
+  title: "Policy Note - {{ word('topics') | title }}"
+  author: "{{ organization.name }} Administration"
+  sections:
+    - heading: "Purpose"
+      paragraphs:
+        - "This note explains how {{ organization.name }} expects staff to handle {{ word('topics') }}."
+        - "{{ sentence('business') }}"
+    - heading: "Scope"
+      bullets:
+        - "Applies to all staff in {{ person.department }} and contractors with network accounts."
+        - "Covers equipment, accounts, and records created for business use."
+        - "Effective {{ date_recent(30) }}; supersedes all earlier notes on this topic."
+    - heading: "Guidelines"
+      numbered:
+        - "Store work files in the approved {{ word('nouns') }} locations only."
+        - "Report anomalies to {{ primary_user.email }} within one business day."
+        - "Request exceptions in writing before acting."
+        - "Complete the related training once per year."
+    - heading: "Review"
+      paragraphs:
+        - "This note is reviewed annually. Questions may be routed to {{ person.full_name }}, {{ person.job_title }}."
+        - "{{ pick('closings') }}"

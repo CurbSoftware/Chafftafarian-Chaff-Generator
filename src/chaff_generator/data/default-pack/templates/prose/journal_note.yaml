@@ -1,0 +1,22 @@
+id: prose.journal_note
+kind: prose
+description: Dated personal journal entry.
+domains: [personal]
+body:
+  title: "Journal - {{ date_recent(4) }}"
+  author: "{{ primary_user.first_name }}"
+  sections:
+    - heading: "Entry"
+      paragraphs:
+        - "{{ paragraph('personal', 4) }}"
+    - heading: "Highlights"
+      bullets:
+        - "{{ sentence('personal') }}"
+        - "Coffee with {{ contact.first_name }} - {{ sentence('personal') }}"
+    - heading: "For Tomorrow"
+      bullets:
+        - "{{ pick('meeting_actions') }}"
+        - "{{ word('nouns') | title }} follow-up with {{ person.first_name }}"
+    - heading: "Mood"
+      paragraphs:
+        - "{{ word('adjectives') }} but {{ word('adverbs') }} optimistic."

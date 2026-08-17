@@ -1,0 +1,18 @@
+id: email.support_request
+kind: email
+description: Internal support request describing a problem.
+domains: [support]
+body:
+  subject: "[HELP-{{ integer(1000, 9999) }}] {{ word('nouns') | title }} not working as expected"
+  from_name: "{{ person.full_name }}"
+  to_name: "IT Service Desk"
+  category: support
+  body_paragraphs:
+    - "Hello,"
+    - "{{ sentence('support') }}"
+    - "What I tried: restarted the {{ word('nouns') }} and cleared the cache."
+    - "Impact: {{ integer(1, 25) }} people in {{ person.department }} affected since {{ date_recent(3) }}."
+    - "Urgency: {{ word('adjectives') }}."
+    - "Reach me at {{ person.email }} or {{ person.phone }}."
+    - "{{ pick('closings') }}"
+  signature: "{{ person.full_name }}\n{{ person.job_title }}, {{ person.department }}"

@@ -1,0 +1,31 @@
+# Action-item phrasing for minutes and follow-up emails.
+Circulate the updated timeline to all stakeholders.
+Confirm attendance for the follow-up session.
+Confirm budget figures with the finance team.
+Consolidate feedback into a single revision.
+Draft the summary report for leadership.
+Follow up on the outstanding approvals.
+Gather usage numbers ahead of the next review.
+Prepare a short demo for the next session.
+Propose two alternative dates for the workshop.
+Reconcile the inventory lists with the register.
+Report back on the vendor conversation.
+Schedule a checkpoint with the support team.
+Share the revised scope document.
+Update the risk register with new findings.
+Verify the access list with the administrator.
+Walk through the test results together.
+Book the room for the next working session.
+Close out the completed work items.
+Document the agreed configuration changes.
+Double-check the license counts before renewal.
+Escalate the blocking issue if unresolved by Friday.
+Finalize the attendee list for the offsite.
+Notify affected users of the maintenance window.
+Outline next quarter's priorities in the plan.
+Review the draft policy with the legal team.
+Send the minutes to the distribution list.
+Set a deadline for comments on the proposal.
+Summarize open questions in the tracking sheet.
+Take the pricing questions to procurement.
+Test the backup restore path in staging.

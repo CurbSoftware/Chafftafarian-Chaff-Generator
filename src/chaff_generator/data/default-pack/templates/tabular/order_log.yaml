@@ -1,0 +1,13 @@
+id: tabular.order_log
+kind: tabular
+description: Purchase order log with suppliers.
+domains: [sales, finance]
+body:
+  sheet_title: "Order Log - {{ organization.name }}"
+  columns: ["PO Number", "Supplier", "Items", "Order Date", "Total", "Status"]
+  rows:
+    - ["PO-{{ integer(10000, 99999) }}", "{{ vendor.name }}", "{{ integer(1, 40) }}", "{{ date_recent(30) }}", "{{ money(120, 18000) }}", "received"]
+    - ["PO-{{ integer(10000, 99999) }}", "{{ vendor.name }}", "{{ integer(1, 25) }}", "{{ date_recent(20) }}", "{{ money(90, 12000) }}", "shipped"]
+    - ["PO-{{ integer(10000, 99999) }}", "{{ vendor.name }}", "{{ integer(1, 60) }}", "{{ date_recent(12) }}", "{{ money(200, 26000) }}", "approved"]
+    - ["PO-{{ integer(10000, 99999) }}", "{{ vendor.name }}", "{{ integer(1, 15) }}", "{{ date_recent(4) }}", "{{ money(60, 9000) }}", "submitted"]
+  notes: "{{ sentence('finance') }}"

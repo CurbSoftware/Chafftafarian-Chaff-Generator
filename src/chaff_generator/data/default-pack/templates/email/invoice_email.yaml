@@ -1,0 +1,20 @@
+id: email.invoice_email
+kind: email
+description: Invoice delivery email with payment details.
+domains: [finance]
+body:
+  subject: "Invoice {{ invoice.number }} from {{ organization.name }} - due {{ invoice.due | datefmt }}"
+  from_name: "{{ organization.name }} Billing"
+  to_name: "{{ contact.full_name }}"
+  category: billing
+  body_paragraphs:
+    - "Dear {{ contact.first_name }},"
+    - "Please find invoice {{ invoice.number }} attached."
+    - "Issued: {{ invoice.issued | datefmt }}. Due: {{ invoice.due | datefmt }}."
+    - "Amount due: {{ invoice.total | currency }}."
+    - "{{ sentence('finance') }}"
+    - "Remittance details are on the final page of the attachment."
+    - "{{ pick('closings') }}"
+  signature: "Accounts Receivable\n{{ organization.name }}\n{{ primary_user.email }}"
+  attachments:
+    - "invoice_{{ invoice.number }}.pdf"

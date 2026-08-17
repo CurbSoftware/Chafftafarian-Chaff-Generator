@@ -1,0 +1,39 @@
+id: presentation.project_kickoff
+kind: presentation
+description: Project kickoff briefing deck.
+domains: [business, technical]
+body:
+  title: "Kickoff - {{ project.name }}"
+  subtitle: "{{ project.code }} - {{ project_manager.full_name }}"
+  slides:
+    - kind: title
+      heading: "{{ project.name }}"
+      note: "Kickoff briefing - {{ date_recent(20) }}"
+    - kind: section
+      heading: "Why"
+    - kind: bullets
+      heading: "Objectives"
+      bullets:
+        - "Deliver {{ word('topics') | title }} improvement for {{ organization.name }}."
+        - "Stay within the {{ project.budget | currency }} budget."
+        - "Complete by {{ date_recent(120) }}."
+    - kind: section
+      heading: "How"
+    - kind: bullets
+      heading: "Approach"
+      bullets:
+        - "{{ sentence('project_updates') }}"
+        - "{{ sentence('technical') }}"
+        - "{{ pick('meeting_actions') }}"
+    - kind: table
+      heading: "Team"
+      columns: ["Role", "Name"]
+      rows:
+        - ["Manager", "{{ project_manager.full_name }}"]
+        - ["Lead", "{{ person.full_name }}"]
+        - ["Sponsor", "{{ primary_user.full_name }}"]
+    - kind: bullets
+      heading: "Next Steps"
+      bullets:
+        - "{{ pick('meeting_actions') }}"
+        - "First checkpoint: {{ date_recent(14) }}"

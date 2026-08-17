@@ -1,0 +1,13 @@
+id: tabular.vendor_list
+kind: tabular
+description: Approved supplier list with ratings.
+domains: [business, administrative]
+body:
+  sheet_title: "Approved Vendors"
+  columns: ["Vendor", "Category", "Contact", "City", "Rating", "Contract End"]
+  rows:
+    - ["{{ vendor.name }}", "{{ word('nouns') }}", "{{ contact.full_name }}", "{{ vendor.city }}", "{{ decimal(3.5, 5.0, 1) }}", "{{ date_recent(200) }}"]
+    - ["{{ vendor.name }}", "logistics", "{{ contact.full_name }}", "{{ vendor.city }}", "{{ decimal(3.5, 5.0, 1) }}", "{{ date_recent(150) }}"]
+    - ["{{ vendor.name }}", "professional services", "{{ contact.full_name }}", "{{ vendor.city }}", "{{ decimal(3.5, 5.0, 1) }}", "{{ date_recent(80) }}"]
+    - ["{{ vendor.name }}", "maintenance", "{{ contact.full_name }}", "{{ vendor.city }}", "{{ decimal(3.5, 5.0, 1) }}", "{{ date_recent(30) }}"]
+  notes: "Reviewed quarterly by {{ person.full_name }}."

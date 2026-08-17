@@ -1,0 +1,31 @@
+id: prose.receipt
+kind: prose
+description: Point-of-sale style receipt for a product order.
+domains: [finance, sales]
+body:
+  title: "SALES RECEIPT"
+  author: "{{ organization.name }}"
+  sections:
+    - heading: "Receipt Header"
+      paragraphs:
+        - "{{ organization.name }}"
+        - "{{ organization.hq_city }}"
+        - "Receipt: RC-{{ integer(10000, 99999) }}"
+        - "Date: {{ date_recent(6) }}"
+        - "Served by: {{ primary_user.first_name }}"
+    - heading: "Items"
+      table:
+        columns: ["Item", "Qty", "Price"]
+        rows:
+          - ["{{ product.name }}", "1", "{{ '%.2f' | format(product.unit_price) }}"]
+          - ["{{ word('products') }}", "{{ integer(1, 4) }}", "{{ '%.2f' | format(product.unit_price * 0.4) }}"]
+    - heading: "Totals"
+      paragraphs:
+        - "Subtotal: {{ money(20, 1800) }}"
+        - "Tax: {{ money(2, 140) }}"
+        - "TOTAL PAID: {{ money(22, 1940) }}"
+        - "Payment: card ending {{ integer(1000, 9999) }}"
+    - heading: "Footer"
+      paragraphs:
+        - "Returns accepted within {{ integer(14, 60) }} days with this receipt."
+        - "Thank you for shopping with {{ organization.name }}."

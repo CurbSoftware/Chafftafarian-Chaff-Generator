@@ -1,0 +1,28 @@
+id: balanced
+name: Balanced
+description: Even coverage of every supported format.
+directory_layout: simple
+format_weights:
+  txt: 10
+  md: 10
+  html: 8
+  csv: 10
+  json: 10
+  xml: 8
+  eml: 10
+  docx: 10
+  pdf: 10
+  xlsx: 8
+  pptx: 4
+  vcf: 2
+  ics: 2
+  log: 6
+  dev: 4
+content_domains:
+  business: 24
+  technical: 22
+  administrative: 18
+  finance: 12
+  support: 10
+  personal: 8
+  sales: 6

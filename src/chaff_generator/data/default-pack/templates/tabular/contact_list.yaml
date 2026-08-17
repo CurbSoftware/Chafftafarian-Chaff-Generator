@@ -1,0 +1,12 @@
+id: tabular.contact_list
+kind: tabular
+description: Team contact roster.
+domains: [administrative, hr]
+body:
+  sheet_title: "Contacts - {{ person.department }}"
+  columns: ["Name", "Title", "Email", "Phone", "Location"]
+  rows:
+    - ["{{ primary_user.full_name }}", "{{ primary_user.job_title }}", "{{ primary_user.email }}", "{{ primary_user.phone }}", "{{ organization.hq_city }}"]
+    - ["{{ person.full_name }}", "{{ person.job_title }}", "{{ person.email }}", "{{ person.phone }}", "{{ organization.hq_city }}"]
+    - ["{{ contact.full_name }}", "{{ contact.job_title }}", "{{ contact.email }}", "{{ contact.phone }}", "Remote"]
+  notes: "Maintained by {{ primary_user.full_name }}. Last updated {{ date_recent(6) }}."

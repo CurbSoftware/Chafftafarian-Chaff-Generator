@@ -1,0 +1,23 @@
+id: office-workstation
+name: Office Workstation
+description: Business-heavy mix of memos, spreadsheets, invoices, and mail.
+directory_layout: realistic
+format_weights:
+  docx: 20
+  xlsx: 16
+  pdf: 14
+  eml: 16
+  pptx: 8
+  txt: 8
+  csv: 8
+  md: 4
+  html: 2
+  ics: 2
+  vcf: 2
+content_domains:
+  business: 34
+  finance: 22
+  administrative: 20
+  sales: 10
+  technical: 8
+  support: 6

@@ -1,0 +1,8 @@
+id: record.ticket_history
+kind: record
+description: Support ticket history entries.
+domains: [support]
+body:
+  record_type: ticket_history
+  columns: ["ticket", "opened", "reporter", "assignee", "category", "status", "closed"]
+  row_count: 60

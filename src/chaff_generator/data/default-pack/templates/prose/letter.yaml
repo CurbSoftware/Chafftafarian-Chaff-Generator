@@ -1,0 +1,33 @@
+id: prose.letter
+kind: prose
+description: Formal business letter on organizational letterhead.
+domains: [business, administrative]
+render_targets: [txt, md, html, docx, pdf]
+body:
+  title: "{{ organization.name }}"
+  author: "{{ primary_user.full_name }}"
+  sections:
+    - heading: "Sender Block"
+      paragraphs:
+        - "{{ primary_user.full_name }}, {{ primary_user.job_title }}"
+        - "{{ organization.name }}"
+        - "{{ organization.hq_city }}"
+        - "{{ date_recent(15) }}"
+    - heading: "Recipient Block"
+      paragraphs:
+        - "{{ contact.full_name }}"
+        - "{{ client.name }}"
+        - "{{ client.city }}"
+    - heading: "Re"
+      paragraphs:
+        - "Subject: {{ word('topics') | title }} - reference {{ project.code }}"
+    - heading: "Body"
+      paragraphs:
+        - "Dear {{ contact.first_name }},"
+        - "{{ pick('greetings') }}"
+        - "{{ paragraph('business', 3) }}"
+        - "{{ sentence('business') }}"
+        - "{{ pick('closings') }}"
+        - "Yours sincerely,"
+        - "{{ primary_user.full_name }}"
+        - "{{ primary_user.job_title }}, {{ organization.name }}"

@@ -1,0 +1,33 @@
+id: storage-test
+name: Storage Test
+description: Normal files plus large deterministic storage payloads.
+directory_layout: simple
+format_weights:
+  dat: 55
+  txt: 10
+  log: 10
+  csv: 8
+  json: 6
+  pdf: 5
+  docx: 3
+  eml: 3
+content_domains:
+  business: 34
+  technical: 30
+  administrative: 18
+  finance: 10
+  support: 8
+payload_default: true
+size_profile:
+  dat:
+    min: 1 MiB
+    max: 4 GiB
+  txt:
+    min: 1 KiB
+    max: 8 MiB
+  log:
+    min: 64 KiB
+    max: 64 MiB
+  csv:
+    min: 16 KiB
+    max: 128 MiB

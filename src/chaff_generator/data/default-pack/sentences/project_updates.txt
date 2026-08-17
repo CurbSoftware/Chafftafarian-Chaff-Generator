@@ -1,0 +1,59 @@
+# Project-update sentences; entries may reference world entities.
+Acceptance testing begins once the defect burn-down completes.
+Additional review time was requested by the quality gate owner.
+All stories in the current sprint are progressing as planned.
+An extra checkpoint was added ahead of the go-live decision.
+Background preparation kept the critical path clear this week.
+Completion criteria were restated for the benefit of new joiners.
+Delivery dates were reaffirmed with the implementation teams.
+Demonstrations to the business sponsors are now fortnightly.
+Dependencies on the platform team were resolved ahead of need.
+Design sign-off cleared the way for build work to begin.
+Early indicators suggest the efficiency targets will be met.
+Estimates for the remaining work were refreshed mid-sprint.
+External dependencies are now tracked on the shared board.
+Final data migration rehearsal is booked for the weekend.
+Handover documentation started earlier than planned.
+Key risks have owners and review dates assigned.
+Lessons learned are captured continuously rather than at the end.
+Mitigations for the top two risks were put into effect.
+Monthly steering updates continue on the agreed cadence.
+New intake requests were triaged within the target window.
+Outstanding change requests were sized by the delivery leads.
+Phase gates were passed without conditions this cycle.
+Pilot feedback was incorporated into the second release.
+Progress reporting moved to a single shared dashboard.
+Regression suites run green after the latest drop.
+Remaining effort is concentrated in reporting and cleanup.
+Resource conflicts were resolved by re-sequencing two work items.
+Scope boundaries were restated after the latest change request.
+The benefits case was refreshed with current run-rate data.
+The change budget was consumed slightly faster than forecast.
+The critical path shortened by a week after the re-plan.
+The delivery forecast now includes explicit contingency.
+The first milestone was accepted by the business owner.
+The go/no-go meeting is scheduled for the end of the month.
+The lessons-learned log was reviewed at the retrospective.
+The risk register was pruned of stale entries.
+The second iteration closed with all committed items done.
+The steering group asked for a deeper cost breakdown.
+The training plan was aligned with the rollout schedule.
+The workstream leads met to re-confirm the plan of record.
+Timeline pressure eased after the vendor confirmed delivery dates.
+Two blockers were cleared following the escalation call.
+Uplift tasks were parked until after the stabilization window.
+{{ project.name }} moved into its next phase on schedule.
+The steering pack for {{ project.name }} was circulated on Friday.
+{{ project.name }} is funded at {{ project.budget | currency }} for the current phase.
+The current phase of {{ project.code }} is expected to close next month.
+Delivery ownership for {{ project.name }} sits with {{ project_manager.full_name }}.
+{{ project_manager.first_name }} confirmed the revised dates in writing.
+Updates for {{ project.name }} are drafted by {{ primary_user.full_name }}.
+The dashboard for {{ project.name }} is maintained by {{ person.full_name }}.
+Escalations for {{ project.name }} route to {{ person.job_title }} {{ person.last_name }}.
+Change requests should quote reference {{ project.code }} in the subject line.
+The sponsor thanked {{ person.full_name }} for the clear summary.
+A walkthrough with {{ client.name }} is planned for Thursday.
+Findings were shared with {{ contact.full_name }} for comment.
+The team agreed to brief {{ vendor.name }} on the revised interface.
+Minutes were recorded by {{ person.first_name }} and approved without change.

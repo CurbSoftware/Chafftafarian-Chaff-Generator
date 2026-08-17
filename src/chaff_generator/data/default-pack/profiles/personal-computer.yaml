@@ -1,0 +1,23 @@
+id: personal-computer
+name: Personal Computer
+description: A home-machine feel - notes, letters, photos of documents, casual mail.
+directory_layout: realistic
+format_weights:
+  txt: 24
+  md: 12
+  pdf: 12
+  docx: 10
+  eml: 14
+  csv: 6
+  json: 6
+  html: 8
+  vcf: 4
+  ics: 2
+  log: 2
+content_domains:
+  personal: 44
+  business: 18
+  administrative: 16
+  technical: 10
+  finance: 8
+  support: 4

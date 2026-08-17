@@ -1,0 +1,12 @@
+id: tabular.license_register
+kind: tabular
+description: Software license and subscription register.
+domains: [technical, finance]
+body:
+  sheet_title: "License Register - {{ organization.name }}"
+  columns: ["License", "Vendor", "Seats", "Renewal", "Annual Cost", "Owner"]
+  rows:
+    - ["{{ word('technologies') }} Enterprise", "{{ vendor.name }}", "{{ integer(10, 500) }}", "{{ date_recent(90) }}", "{{ money(1200, 48000) }}", "{{ person.full_name }}"]
+    - ["{{ word('technologies') }} Team", "{{ vendor.name }}", "{{ integer(5, 120) }}", "{{ date_recent(60) }}", "{{ money(600, 21000) }}", "{{ primary_user.full_name }}"]
+    - ["{{ word('technologies') }} Add-on", "{{ vendor.name }}", "{{ integer(1, 40) }}", "{{ date_recent(20) }}", "{{ money(150, 9000) }}", "{{ person.full_name }}"]
+  notes: "Renewal alerts go to {{ primary_user.email }} 60 days ahead."

@@ -1,0 +1,13 @@
+id: tabular.timesheet
+kind: tabular
+description: Weekly timesheet with project codes.
+domains: [business, administrative]
+body:
+  sheet_title: "Timesheet - {{ primary_user.full_name }} ({{ date_recent(3) }})"
+  columns: ["Date", "Project", "Task", "Hours", "Approved"]
+  rows:
+    - ["{{ date_recent(5) }}", "{{ project.code }}", "{{ word('nouns') | title }} work", "{{ decimal(1.0, 8.5, 1) }}", "yes"]
+    - ["{{ date_recent(4) }}", "{{ project.code }}", "{{ word('topics') | title }} review", "{{ decimal(1.0, 8.5, 1) }}", "yes"]
+    - ["{{ date_recent(3) }}", "INTERNAL", "Team meeting {{ meeting.id }}", "{{ decimal(0.5, 3.0, 1) }}", "pending"]
+    - ["{{ date_recent(2) }}", "{{ project.code }}", "{{ word('nouns') | title }} follow-up", "{{ decimal(1.0, 7.5, 1) }}", "pending"]
+  notes: "Approver: {{ person.full_name }}. {{ sentence('business') }}"

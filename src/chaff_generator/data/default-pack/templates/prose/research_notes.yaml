@@ -1,0 +1,29 @@
+id: prose.research_notes
+kind: prose
+description: Working notes capturing an investigation and open questions.
+domains: [technical, research]
+body:
+  title: "Working Notes - {{ word('topics') | title }}"
+  author: "{{ primary_user.full_name }}"
+  sections:
+    - heading: "Question"
+      paragraphs:
+        - "Can {{ word('technologies') }} reduce the {{ word('nouns') }} processing time for {{ organization.name }}?"
+    - heading: "Notes"
+      paragraphs:
+        - "{{ date_recent(30) }} - {{ sentence('technical') }}"
+        - "{{ date_recent(21) }} - {{ sentence('technical') }}"
+        - "{{ date_recent(12) }} - {{ sentence('technical') }}"
+    - heading: "Observations"
+      bullets:
+        - "{{ word('adjectives') | title }} behavior under load."
+        - "{{ integer(3, 30) }} percent improvement in the trial runs."
+        - "No new dependencies introduced."
+    - heading: "Open Questions"
+      numbered:
+        - "Does the gain hold with {{ integer(2, 10) }} times the current volume?"
+        - "Who owns the follow-up - {{ person.full_name }} or {{ contact.full_name }}?"
+    - heading: "Next Steps"
+      paragraphs:
+        - "{{ pick('meeting_actions') }}"
+        - "Revisit on {{ date_recent(10) }}."

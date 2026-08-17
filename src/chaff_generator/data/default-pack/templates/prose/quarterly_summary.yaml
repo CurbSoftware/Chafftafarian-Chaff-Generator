@@ -1,0 +1,32 @@
+id: prose.quarterly_summary
+kind: prose
+description: Departmental quarterly summary with figures and outlook.
+domains: [business, finance]
+body:
+  title: "Quarterly Summary - {{ person.department }}"
+  author: "{{ primary_user.full_name }}"
+  sections:
+    - heading: "Period"
+      paragraphs:
+        - "Department: {{ person.department }}"
+        - "Prepared: {{ date_recent(10) }}"
+        - "Reference: {{ project.code }}"
+    - heading: "Highlights"
+      bullets:
+        - "{{ sentence('business') }}"
+        - "{{ sentence('finance') }}"
+        - "{{ pick('project_status') }}"
+    - heading: "Key Figures"
+      table:
+        columns: ["Metric", "This Quarter", "Comment"]
+        rows:
+          - ["Spend", "{{ money(40000, 320000) }}", "{{ word('adjectives') | title }} vs plan"]
+          - ["Open items", "{{ integer(3, 45) }}", "{{ word('adverbs') }} stable"]
+          - ["Staffing", "{{ integer(6, 40) }} FTE", "No material change"]
+    - heading: "Outlook"
+      paragraphs:
+        - "{{ paragraph('business', 2) }}"
+        - "{{ sentence('project_updates') }}"
+    - heading: "Distribution"
+      paragraphs:
+        - "{{ organization.name }} leadership and {{ person.department }} managers."

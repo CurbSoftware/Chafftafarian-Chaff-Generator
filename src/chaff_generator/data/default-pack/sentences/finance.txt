@@ -1,0 +1,47 @@
+# Finance-flavored sentences; entries may reference world entities.
+Accrued expenses were trued up before the period close.
+Actuals landed within one percent of the rolling forecast.
+Amortization schedules were refreshed for the new software licenses.
+Budget holders confirmed their commitments for the next quarter.
+Capital expenditure stayed under the approved envelope this period.
+Cash flow improved after receivables collection was tightened.
+Depreciation was recalculated following the asset revaluation.
+Expense reports submitted before the cutoff were paid on schedule.
+Foreign exchange gains slightly offset the higher freight costs.
+Invoice matching cleared all but two exceptions this week.
+Month-end journals were posted and locked on schedule.
+Petty cash was reconciled and the float restored.
+Purchase orders above the threshold received dual sign-off.
+Quarterly provisions were reviewed with the external accountants.
+Reserve levels were reviewed against the updated policy.
+Revenue recognition followed the milestone schedule agreed in the contract.
+Statutory filings were submitted ahead of the deadline.
+Tax withholding tables were updated for the new fiscal year.
+The annual plan was baselined after the board review.
+The audit sample produced no exceptions this cycle.
+The bank reconciliation matched to the penny for all accounts.
+The benefits budget absorbed the premium increase without cuts.
+The committee approved the reallocation between cost centers.
+The depreciation run completed cleanly overnight.
+The forecast was rolled forward with revised volume assumptions.
+The grant reporting pack was assembled for the funder.
+The petty change fund count was witnessed by two staff.
+The travel budget was re-forecast after the conference commitments.
+Two supplier statements required clarification before payment.
+Unbudgeted costs were absorbed by the contingency line.
+Variances above five percent now require a written explanation.
+Withholding certificates were collected from new vendors.
+Year-end accruals were agreed with the controller.
+The invoice for {{ invoice.total | currency }} was issued to {{ invoice.client }}.
+Invoice {{ invoice.number }} becomes due on {{ invoice.due | datefmt }}.
+The statement referenced invoice {{ invoice.number }} as still outstanding.
+{{ client.name }} requested a consolidated statement for the quarter.
+Purchase approval was recorded by {{ person.full_name }} for the record.
+The finance folder was updated by {{ primary_user.full_name }} before close.
+Payment terms with {{ vendor.name }} were standardized at net thirty.
+A credit note was raised against invoice {{ invoice.number }}.
+Reconciliation comments were added by {{ person.first_name }} in the ledger.
+Budget code {{ project.code }} should be quoted on all requests.
+Travel pre-approval should be sent to {{ primary_user.email }} for countersigning.
+The forecast deck cited {{ project.name }} as the main driver of the increase.
+Depreciation for the quarter was signed off by {{ person.job_title }} {{ person.last_name }}.

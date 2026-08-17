@@ -1,0 +1,36 @@
+id: presentation.quarterly_review
+kind: presentation
+description: Quarterly business review deck.
+domains: [business, finance]
+body:
+  title: "Quarterly Business Review"
+  subtitle: "{{ organization.name }} - {{ date_recent(10) }}"
+  slides:
+    - kind: title
+      heading: "Quarterly Business Review"
+      note: "{{ organization.name }}"
+    - kind: section
+      heading: "Highlights"
+    - kind: bullets
+      heading: "What Went Well"
+      bullets:
+        - "{{ sentence('business') }}"
+        - "{{ pick('project_status') }}"
+        - "{{ sentence('finance') }}"
+    - kind: bullets
+      heading: "Watch Items"
+      bullets:
+        - "{{ word('nouns') | title }} costs trending up {{ integer(3, 18) }} percent."
+        - "{{ sentence('business') }}"
+    - kind: table
+      heading: "Key Figures"
+      columns: ["Metric", "Value"]
+      rows:
+        - ["Revenue", "{{ money(250000, 4200000) }}"]
+        - ["Open items", "{{ integer(5, 60) }}"]
+        - ["Headcount", "{{ integer(20, 400) }}"]
+    - kind: bullets
+      heading: "Next Quarter"
+      bullets:
+        - "{{ sentence('project_updates') }}"
+        - "{{ pick('meeting_actions') }}"

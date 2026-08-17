@@ -1,0 +1,18 @@
+id: email.meeting_invitation
+kind: email
+description: Calendar-style meeting invitation message.
+domains: [business, administrative]
+body:
+  subject: "Invitation: {{ meeting.topic }} - {{ meeting.date | datefmt }}"
+  from_name: "{{ primary_user.full_name }}"
+  to_name: "{{ person.full_name }}"
+  category: calendar
+  body_paragraphs:
+    - "You are invited to {{ meeting.topic }}."
+    - "When: {{ meeting.date | datefmt }}, {{ integer(9, 16) }}:{{ integer(10, 59) }}"
+    - "Where: conference room {{ integer(101, 799) }} / video bridge"
+    - "Agenda:"
+    - "{{ pick('meeting_actions') }}"
+    - "{{ pick('meeting_actions') }}"
+    - "Please confirm attendance or send a delegate."
+  signature: "{{ primary_user.full_name }}\n{{ primary_user.email }}"

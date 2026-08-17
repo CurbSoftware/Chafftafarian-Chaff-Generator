@@ -1,0 +1,13 @@
+id: tabular.asset_inventory
+kind: tabular
+description: IT asset inventory register.
+domains: [technical, administrative]
+body:
+  sheet_title: "Asset Inventory - {{ organization.name }}"
+  columns: ["Asset Tag", "Category", "Model", "Assigned To", "Location", "Acquired", "Warranty End"]
+  rows:
+    - ["AST-{{ integer(1000, 9999) }}", "compute", "{{ word('products') }}", "{{ person.full_name }}", "{{ organization.hq_city }}", "{{ date_recent(700) }}", "{{ date_recent(60) }}"]
+    - ["AST-{{ integer(1000, 9999) }}", "display", "{{ word('products') }}", "{{ primary_user.full_name }}", "{{ organization.hq_city }}", "{{ date_recent(650) }}", "{{ date_recent(120) }}"]
+    - ["AST-{{ integer(1000, 9999) }}", "network", "{{ word('products') }}", "IT Stock", "Comms Room", "{{ date_recent(500) }}", "{{ date_recent(200) }}"]
+    - ["AST-{{ integer(1000, 9999) }}", "accessory", "{{ word('products') }}", "{{ contact.full_name }}", "Remote", "{{ date_recent(400) }}", "{{ date_recent(30) }}"]
+  notes: "Reconciled against purchase orders by {{ primary_user.full_name }}."

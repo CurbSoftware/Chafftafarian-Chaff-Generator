@@ -1,0 +1,35 @@
+id: presentation.product_overview
+kind: presentation
+description: Product line overview deck for clients.
+domains: [sales, technical]
+body:
+  title: "Product Overview"
+  subtitle: "{{ organization.name }} portfolio - {{ date_recent(8) }}"
+  slides:
+    - kind: title
+      heading: "{{ organization.name }} Product Overview"
+      note: "Prepared for {{ client.name }}"
+    - kind: section
+      heading: "Portfolio"
+    - kind: table
+      heading: "Featured Products"
+      columns: ["Product", "Category", "Price"]
+      rows:
+        - ["{{ product.name }}", "{{ product.category }}", "{{ product.unit_price | currency }}"]
+        - ["{{ word('products') }} Pro", "accessories", "{{ money(49, 899) }}"]
+        - ["{{ word('products') }} Starter", "accessories", "{{ money(19, 199) }}"]
+    - kind: bullets
+      heading: "Why Customers Choose Us"
+      bullets:
+        - "{{ sentence('business') }}"
+        - "{{ sentence('support') }}"
+    - kind: bullets
+      heading: "Roadmap"
+      bullets:
+        - "{{ word('topics') | title }} enhancements in Q{{ integer(1, 4) }}."
+        - "{{ sentence('project_updates') }}"
+    - kind: bullets
+      heading: "Contact"
+      bullets:
+        - "{{ primary_user.full_name }} - {{ primary_user.email }}"
+        - "{{ organization.name }}, {{ organization.hq_city }}"

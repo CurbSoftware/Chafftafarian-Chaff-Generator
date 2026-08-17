@@ -1,0 +1,28 @@
+id: prose.readme
+kind: prose
+description: README-style overview for a folder or shared workspace.
+domains: [technical, administrative]
+body:
+  title: "README - {{ word('topics') | title }} Workspace"
+  author: "{{ primary_user.full_name }}"
+  sections:
+    - heading: "About This Folder"
+      paragraphs:
+        - "Shared workspace for {{ project.name }} ({{ project.code }})."
+        - "{{ sentence('business') }}"
+    - heading: "Contents"
+      table:
+        columns: ["Path", "Purpose"]
+        rows:
+          - ["docs/", "Reports, notes, and the decision log"]
+          - ["data/", "Exports and reference files (read-only)"]
+          - ["archive/", "Superseded material, kept for audit"]
+    - heading: "How to Contribute"
+      numbered:
+        - "Check the {{ word('nouns') }} register before creating new folders."
+        - "Name files descriptively; include the date (YYYY-MM-DD)."
+        - "Route approvals through {{ person.full_name }}."
+    - heading: "Contacts"
+      bullets:
+        - "Owner: {{ primary_user.full_name }} ({{ primary_user.email }})"
+        - "Deputy: {{ person.full_name }} ({{ person.department }})"

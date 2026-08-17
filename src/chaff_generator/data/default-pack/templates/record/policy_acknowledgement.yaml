@@ -1,0 +1,8 @@
+id: record.policy_acknowledgement
+kind: record
+description: Policy acknowledgement signatures.
+domains: [hr, administrative]
+body:
+  record_type: policy_acknowledgement
+  columns: ["policy", "version", "employee", "department", "signed_on"]
+  row_count: 45

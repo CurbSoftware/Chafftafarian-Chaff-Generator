@@ -1,0 +1,8 @@
+id: record.equipment_register
+kind: record
+description: Equipment checkout register.
+domains: [administrative]
+body:
+  record_type: equipment_register
+  columns: ["item", "asset_tag", "checked_out", "holder", "due_back", "returned"]
+  row_count: 35

@@ -1,0 +1,18 @@
+id: email.internal_notice
+kind: email
+description: Organization-wide announcement or notice.
+domains: [administrative, hr]
+body:
+  subject: "Notice: {{ word('topics') | title }} - effective {{ date_recent(20) }}"
+  from_name: "{{ organization.name }} Administration"
+  to_name: "All Staff"
+  category: announcement
+  body_paragraphs:
+    - "Dear colleagues,"
+    - "{{ sentence('business') }}"
+    - "What is changing: {{ paragraph('business', 2) }}"
+    - "What you need to do:"
+    - "1. Review the updated guidance before {{ date_recent(10) }}."
+    - "2. Direct questions to {{ primary_user.email }}."
+    - "{{ pick('closings') }}"
+  signature: "{{ organization.name }} Administration"

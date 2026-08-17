@@ -1,0 +1,31 @@
+id: prose.invoice
+kind: prose
+description: Invoice document rendered from a world invoice record.
+domains: [finance]
+body:
+  title: "INVOICE {{ invoice.number }}"
+  author: "{{ organization.name }} Billing"
+  sections:
+    - heading: "Parties"
+      paragraphs:
+        - "From: {{ organization.name }}, {{ organization.hq_city }}"
+        - "Bill to: {{ invoice.client }}"
+        - "Reference: {{ invoice.number }}"
+    - heading: "Dates"
+      paragraphs:
+        - "Issued: {{ invoice.issued | datefmt }}"
+        - "Due: {{ invoice.due | datefmt }}"
+    - heading: "Line Items"
+      table:
+        columns: ["Description", "Qty", "Unit Price", "Total"]
+        rows:
+          - ["{{ invoice.lines[0].description }}", "{{ invoice.lines[0].quantity }}", "{{ invoice.lines[0].unit_price | currency }}", "{{ invoice.lines[0].total | currency }}"]
+          - ["{{ invoice.lines[1].description if invoice.lines | length > 1 else 'Continuation' }}", "{{ invoice.lines[1].quantity if invoice.lines | length > 1 else 1 }}", "{{ invoice.lines[1].unit_price | currency if invoice.lines | length > 1 else invoice.lines[0].unit_price | currency }}", "{{ invoice.lines[1].total | currency if invoice.lines | length > 1 else invoice.lines[0].total | currency }}"]
+    - heading: "Amount Due"
+      paragraphs:
+        - "Total: {{ invoice.total | currency }}"
+        - "Payment terms: net {{ integer(14, 45) }} days from issue."
+    - heading: "Notes"
+      paragraphs:
+        - "{{ sentence('finance') }}"
+        - "Remittance questions: {{ primary_user.email }}"

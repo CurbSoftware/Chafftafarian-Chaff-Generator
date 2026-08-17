@@ -1,0 +1,12 @@
+id: builtin.en.general
+name: General English Pack
+version: "1.0"
+language: en
+description: >-
+  The built-in English content pack: word and phrase banks, sentence pools,
+  entity lists, document templates, and generation profiles harvested and
+  authored by the Chaff Generator project.
+author: Chaff Generator project
+attribution: See ATTRIBUTION.md; given names and surnames derive from the
+  US Census Bureau name frequency data (US public domain).
+minimum_chaff_version: "0.1"

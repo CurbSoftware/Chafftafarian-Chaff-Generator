@@ -1,0 +1,38 @@
+id: presentation.security_briefing
+kind: presentation
+description: Security awareness briefing deck.
+domains: [security, technical]
+body:
+  title: "Security Briefing"
+  subtitle: "{{ organization.name }} - {{ date_recent(15) }}"
+  slides:
+    - kind: title
+      heading: "Security Awareness Briefing"
+      note: "Mandatory annual training"
+    - kind: section
+      heading: "Current Threats"
+    - kind: bullets
+      heading: "What We Are Seeing"
+      bullets:
+        - "Phishing attempts referencing {{ word('topics') }} up {{ integer(10, 60) }} percent."
+        - "{{ sentence('technical') }}"
+        - "Credential stuffing targeting VPN accounts."
+    - kind: bullets
+      heading: "Red Flags"
+      bullets:
+        - "Urgent requests to bypass {{ word('nouns') }} approval."
+        - "Unexpected attachments referencing invoices."
+        - "Login prompts on lookalike domains."
+    - kind: table
+      heading: "Response Times (Last Quarter)"
+      columns: ["Metric", "Value"]
+      rows:
+        - ["Median containment", "{{ integer(4, 48) }} minutes"]
+        - ["Reports from staff", "{{ integer(20, 300) }}"]
+        - ["False positives", "{{ integer(5, 90) }}"]
+    - kind: bullets
+      heading: "Your Part"
+      bullets:
+        - "Report anything odd to {{ primary_user.email }}."
+        - "Use the password manager; no reuse."
+        - "Complete the {{ word('topics') }} module by {{ date_recent(20) }}."
