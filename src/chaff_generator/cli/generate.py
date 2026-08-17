@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import replace
+from decimal import Decimal
 from enum import StrEnum
 from pathlib import Path
 from typing import Annotated
@@ -51,6 +52,26 @@ def generate(
         str | None,
         typer.Option("--size", help="Total volume to generate, e.g. '20 MiB' or '1.5 GB'."),
     ] = None,
+    percent_free: Annotated[
+        float | None,
+        typer.Option(
+            "--percent-free",
+            min=0.0,
+            max=100.0,
+            help="Fill this percentage of the currently free space (storage-test mode).",
+        ),
+    ] = None,
+    fill_free_space: Annotated[
+        bool,
+        typer.Option(
+            "--fill-free-space",
+            help="Fill the target until only the reserve stays free (storage-test mode).",
+        ),
+    ] = False,
+    reserve: Annotated[
+        str,
+        typer.Option("--reserve", help="Free bytes to always leave, e.g. '2 GB'."),
+    ] = "2 GB",
     profile: Annotated[
         str, typer.Option("--profile", help="Content profile id (see 'chaff packs list').")
     ] = "realistic-desktop",
@@ -89,6 +110,9 @@ def generate(
         job_config = _build_config(
             target=target,
             size=size,
+            percent_free=percent_free,
+            fill_free_space=fill_free_space,
+            reserve=reserve,
             profile=profile,
             types=types,
             layout=layout.value,
@@ -162,6 +186,9 @@ def _build_config(
     *,
     target: Path,
     size: str | None,
+    percent_free: float | None,
+    fill_free_space: bool,
+    reserve: str,
     profile: str,
     types: str | None,
     layout: str,
@@ -179,11 +206,40 @@ def _build_config(
             target=TargetSpec(path=target, mode=TargetMode.EXACT, amount=1),
         )
 
-    if size is None and base.target.amount is None:
-        raise ChaffError("Provide --size (or a preset with target.amount)")
-    amount = parse_size(size) if size is not None else base.target.amount
-    if amount is None or amount <= 0:
-        raise ChaffError(f"Invalid size: {size!r}")
+    mode_flags = sum(
+        1 for flag in (size is not None, percent_free is not None, fill_free_space) if flag
+    )
+    if mode_flags != 1:
+        raise ChaffError(
+            "Give exactly one of --size, --percent-free, or --fill-free-space "
+            "(or a preset with target.amount)"
+        )
+
+    if size is not None:
+        amount = parse_size(size)
+        if amount <= 0:
+            raise ChaffError(f"Invalid size: {size!r}")
+        target_spec = TargetSpec(
+            path=target,
+            mode=TargetMode.EXACT,
+            amount=amount,
+            reserve=parse_size(reserve),
+        )
+    elif percent_free is not None:
+        if not 0 < percent_free <= 100:
+            raise ChaffError(f"--percent-free must be in (0, 100], got {percent_free}")
+        target_spec = TargetSpec(
+            path=target,
+            mode=TargetMode.PERCENT_FREE,
+            percent=Decimal(str(percent_free)),
+            reserve=parse_size(reserve),
+        )
+    else:
+        target_spec = TargetSpec(
+            path=target,
+            mode=TargetMode.FILL_UNTIL_RESERVE,
+            reserve=parse_size(reserve),
+        )
 
     file_types: dict[str, FileTypeSetting] = dict(base.file_types)
     if types is not None:
@@ -193,13 +249,6 @@ def _build_config(
         if not file_types:
             raise ChaffError("--types produced no formats")
 
-    target_spec = TargetSpec(
-        path=target,
-        mode=base.target.mode,
-        amount=amount,
-        percent=base.target.percent,
-        reserve=base.target.reserve,
-    )
     return replace(
         base,
         target=target_spec,

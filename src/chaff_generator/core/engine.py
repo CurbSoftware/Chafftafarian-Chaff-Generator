@@ -42,6 +42,7 @@ from chaff_generator.core.models import (
 from chaff_generator.core.paths import safe_join
 from chaff_generator.core.planner import Planner, estimate_file_count
 from chaff_generator.core.seeding import derive_file_seed
+from chaff_generator.core.size import format_size
 from chaff_generator.manifest.models import FileRecord, RunMarker
 from chaff_generator.manifest.writer import (
     JournalWriter,
@@ -71,6 +72,10 @@ MAX_FILES_PER_RUN = 1_000_000
 
 #: Warn (spec section 25) when a run would exceed this many files.
 FILE_COUNT_WARN_THRESHOLD = 100_000
+
+#: Fill-mode headroom: the run's own marker and journal grow while writing;
+#: aiming this far shy of full availability keeps the reserve intact.
+_FILL_HEADROOM_BYTES = 64 << 10
 
 #: Template kinds with a semantic-document builder; other kinds self-render.
 _BUILDER_BY_KIND: dict[str, DocumentBuilder] = {
@@ -142,9 +147,15 @@ class ChaffEngine:
         monitor = FreeSpaceMonitor(target.path, reserve_bytes=target.reserve)
         free_bytes = monitor.check()
 
-        if target.mode is not TargetMode.EXACT:
-            raise ConfigurationError(f"Target mode {target.mode.value} is not implemented yet")
-        requested = target.amount or 0
+        if target.mode is TargetMode.EXACT:
+            requested = target.amount or 0
+        else:
+            requested = self._fill_target(monitor)
+        if target.mode is not TargetMode.EXACT and requested <= 0:
+            raise InsufficientSpaceError(
+                "No space is available above the reserve for a fill-mode run",
+                details={"free_bytes": free_bytes, "reserve_bytes": target.reserve},
+            )
 
         pool = self._resolve_pool(warnings)
         if not pool:
@@ -197,8 +208,6 @@ class ChaffEngine:
         started = time.monotonic()
         warnings: list[str] = []
         target = self._config.target
-        if target.mode is not TargetMode.EXACT:
-            raise ConfigurationError(f"Target mode {target.mode.value} is not implemented yet")
 
         pool = self._resolve_pool(warnings)
         if not pool:
@@ -208,9 +217,13 @@ class ChaffEngine:
         capabilities = {fmt: self._registry.get(fmt).capabilities for fmt in pool}
 
         check_writable_dir(target.path)
-        requested = target.amount or 0
         monitor = FreeSpaceMonitor(target.path, reserve_bytes=target.reserve)
         free_at_start = monitor.check()
+        requested = self._fill_target(monitor)
+        if requested <= 0:
+            return self._fail_before_run(
+                "No space is available above the reserve for this run", warnings
+            )
         if monitor.available_for_chaff() < requested:
             return self._fail_before_run(
                 "Free space dropped below the requested volume before writing", warnings
@@ -225,6 +238,11 @@ class ChaffEngine:
         )
 
         profile = resolve_profile(self._config.profile, self._bank.profiles())
+        if target.mode is not TargetMode.EXACT:
+            # The run marker is real overhead: re-aim the fill target now
+            # that it exists, so the first draw does not clamp to a size
+            # that no longer fits above the reserve.
+            requested = self._fill_target(monitor)
         estimated = estimate_file_count(requested, pool)
         self._world = build_world(
             self._config.seed, self._config, self._bank, estimated_files=estimated
@@ -287,8 +305,18 @@ class ChaffEngine:
                 break
             try:
                 record, written = self._render_file(run_root, planned, monitor)
-            except InsufficientSpaceError:
-                error = "Ran out of free space (respecting the reserve)"
+            except InsufficientSpaceError as exc:
+                if target.mode is TargetMode.EXACT:
+                    error = f"Ran out of free space (respecting the reserve): {exc}"
+                else:
+                    # Fill modes: reaching the reserve IS the goal. Whatever
+                    # gap remains cannot be filled without crossing it
+                    # (spec section 26), so the run completes gracefully.
+                    warnings.append(
+                        "Filled to the reserve; the last "
+                        f"{format_size(remaining)} gap cannot be written without "
+                        "crossing it"
+                    )
                 break
             except (ChaffError, OSError) as exc:
                 consecutive_failures += 1
@@ -314,7 +342,12 @@ class ChaffEngine:
 
             files_created += 1
             bytes_written += written
-            remaining = max(0, remaining - written)
+            if target.mode is TargetMode.FILL_UNTIL_RESERVE:
+                # Monitor truth wins (spec section 58): foreign writers and
+                # our own output both count against what remains.
+                remaining = monitor.available_for_chaff()
+            else:
+                remaining = max(0, remaining - written)
             self._emit(
                 event_types.FileCompleted(
                     index=planned.index,
@@ -372,6 +405,24 @@ class ChaffEngine:
 
     # ---------------------------------------------------------------- internals
 
+    def _fill_target(self, monitor: FreeSpaceMonitor) -> int:
+        """Bytes this run aims to write under the configured target mode.
+
+        EXACT uses the configured amount. PERCENT_FREE fills ``percent``% of
+        the currently free space. FILL_UNTIL_RESERVE aims at everything above
+        the reserve; the loop re-reads the monitor each file so foreign
+        writers and the run's own output both shrink the remaining target.
+        """
+        target = self._config.target
+        if target.mode is TargetMode.EXACT:
+            return target.amount or 0
+        available = monitor.available_for_chaff()
+        if target.mode is TargetMode.PERCENT_FREE:
+            return int(available * float(target.percent or 0) / 100)
+        # Aim shy of the full availability: the run's own marker/journal
+        # grow while writing, and the reserve must never be crossed.
+        return max(0, available - _FILL_HEADROOM_BYTES)
+
     def _resolve_pool(self, warnings: list[str]) -> dict[str, int]:
         """Effective format pool with renderer availability probed."""
         if self._config.file_types:
@@ -419,6 +470,7 @@ class ChaffEngine:
             run_id=self._run_id,
             app_version=__version__,
             template_id=planned.template_id,
+            file_seed=planned.seed,
         )
         context.extra["final_suffix"] = final_path.suffix.lstrip(".").lower()
         context.extra["final_stem"] = final_path.stem

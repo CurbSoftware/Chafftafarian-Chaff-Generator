@@ -29,4 +29,5 @@ class RenderContext:
     run_id: str
     app_version: str
     template_id: str | None = None
+    file_seed: int = 0
     extra: dict[str, object] = field(default_factory=dict)

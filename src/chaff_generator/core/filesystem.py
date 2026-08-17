@@ -109,8 +109,13 @@ class FreeSpaceMonitor:
         return max(0, self.check() - self.reserve_bytes)
 
     def would_violate_reserve(self, planned_bytes: int) -> bool:
-        """True when writing ``planned_bytes`` more would breach the reserve."""
-        return self._last_free - planned_bytes < self.reserve_bytes
+        """True when writing ``planned_bytes`` more would breach the reserve.
+
+        Re-reads the filesystem first: the monitor's truth wins over any
+        logical byte counter (spec section 58) — foreign writers shrink the
+        space even when our own accounting says more is left.
+        """
+        return self.check() - planned_bytes < self.reserve_bytes
 
     def enforce(self, planned_bytes: int) -> None:
         """Raise :class:`InsufficientSpaceError` if the plan breaches reserve."""
